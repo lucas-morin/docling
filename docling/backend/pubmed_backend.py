@@ -71,8 +71,6 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
         return title
         
     def parse_authors(self, tree):    
-        # TODO: Check problematic commit from Cesar 
-
         # Get mapping between affiliation ids and names
         affiliation_ids = tree.xpath(".//aff[@id]/@id")
         affiliation_names = []
@@ -87,17 +85,17 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
                 "name": "",
                 "affiliation_names": []
             }
-            
+
+            # Affiliation names
             affiliation_ids = [a.attrib["rid"] for a in author_xml.findall('xref[@ref-type="aff"]')]
-            
             author["affiliation_names"] = []
             for id in affiliation_ids:
                 if id in affiliation_ids_names:
                     author["affiliation_names"].append(affiliation_ids_names[id])
-               
-            name = author_xml.find("name/surname").text + " " + author_xml.find("name/given-names").text               
             
-            author["name"] = name
+            # Name
+            author["name"] = author_xml.find("name/surname").text + " " + author_xml.find("name/given-names").text 
+
             authors.append(author)
         return authors
     
@@ -116,14 +114,15 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
                 "text": "",
                 "section": ""
             }       
+
+            # Text
             paragraph["text"] = " ".join([t.replace("\n", " ") for t in paragraph_xml.itertext()])
 
+            # Section
             section_xml = paragraph_xml.find("../title")
             if section_xml != None:
                 paragraph["section"] = " ".join([t.replace("\n", " ") for t in section_xml.itertext()])
-            else:
-                paragraph["section"] = ""
-
+            
             paragraphs.append(paragraph)
         return paragraphs
     
@@ -143,7 +142,6 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
                 table_content_xml = table_xml.find("alternatives/table")
             else:
                 table_content_xml = None
-
             if table_content_xml is not None:
                 table["content"] = etree.tostring(table_content_xml)
             
@@ -156,15 +154,11 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
                 caption_xml = None
             if caption_xml is not None:
                 table["caption"] = " ".join([t.replace("\n", " ") for t in caption_xml.itertext()])  
-            else:
-                table["caption"] = ""
-
+            
             # Label 
             if table_xml.find("label") is not None:
                 table["label"] = table_xml.find("label").text
-            else:
-                table["label"] = ""
-
+            
             tables.append(table)
         return tables 
     
@@ -235,20 +229,14 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
             # Title
             if reference_xml.find("article-title") is not None:
                 reference["title"] = " ".join([t.replace("\n", " ") for t in reference_xml.find("article-title").itertext()])        
-            else:
-                reference["title"] = ""
-
+            
             # Journal
             if reference_xml.find("source") is not None:
                 reference["journal"] = reference_xml.find("source").text 
-            else:
-                reference["journal"] = ""
-
+           
             # Year
             if reference_xml.find("year") is not None:
                 reference["year"] = reference_xml.find("year").text
-            else:
-                reference["year"] = ""
             
             references.append(reference)
         return references
