@@ -1,7 +1,7 @@
 import logging
 from io import BytesIO
 from pathlib import Path
-from typing import Dict, List, Set, Union
+from typing import Any, Dict, List, Set, Union
 
 import lxml
 from bs4 import BeautifulSoup
@@ -86,15 +86,14 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
         }
 
         # Get author names and affiliation names
-        authors: List[Dict] = []
+        authors = []
         for author_xml in tree.xpath(
             './/contrib-group/contrib[@contrib-type="author"]'
         ):
-            author = {
+            author: Dict[str, Any] = {
                 "name": "",
                 "affiliation_names": [],
             }
-
             # Affiliation names
             affiliation_ids = [
                 a.attrib["rid"] for a in author_xml.findall('xref[@ref-type="aff"]')
@@ -128,7 +127,7 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
             if "/caption" in paragraph_xml.getroottree().getpath(paragraph_xml):
                 continue
 
-            paragraph = {"text": "", "headers": []}
+            paragraph: Dict[str, Any] = {"text": "", "headers": []}
 
             # Text
             paragraph["text"] = "".join(
@@ -155,7 +154,7 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
     def parse_tables(self, tree: lxml.etree._ElementTree) -> List[Dict]:
         tables: List[Dict] = []
         for table_xml in tree.xpath(".//body//table-wrap"):
-            table = {"label": "", "caption": "", "content": ""}
+            table: Dict[str, Any] = {"label": "", "caption": "", "content": ""}
 
             # Content
             if table_xml.find("table") != None:
@@ -193,7 +192,7 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
             return figure_captions
 
         for figure_xml in tree.findall(".//fig"):
-            figure_caption = {
+            figure_caption: Dict[str, Any] = {
                 "caption": "",
                 "label": "",
             }
@@ -221,13 +220,13 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
     def parse_references(self, tree: lxml.etree._ElementTree) -> List[Dict]:
         references: List[Dict] = []
         for reference_xml_abs in tree.xpath(".//ref-list/ref[@id]"):
-            reference = {
+            reference: Dict[str, Any] = {
                 "author_names": "",
                 "title": "",
                 "journal": "",
                 "year": "",
             }
-            reference_xml = None
+            reference_xml: Any = None
             for tag in ["mixed-citation", "element-citation", "citation"]:
                 reference_xml = reference_xml_abs.find(tag)
                 if reference_xml != None:
@@ -247,15 +246,15 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
             if reference_xml.find("name") != None:
                 for name_xml in reference_xml.findall("name"):
                     name = [t.text for t in name_xml.getchildren()][::-1]
-                    name = " ".join([t for t in name if t != None])
-                    names.append(name)
+                    name_str = " ".join([t for t in name if t != None])
+                    names.append(name_str)
             elif reference_xml.find("person-group") != None:
                 for name_xml in reference_xml.find("person-group"):
-                    name = " ".join(
+                    name_str = " ".join(
                         name_xml.xpath("given-names/text()")
                         + name_xml.xpath("surname/text()")
                     )
-                    names.append(name)
+                    names.append(name_str)
             reference["author_names"] = "; ".join(names)
 
             # Title
@@ -309,7 +308,7 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
         return xml_components
 
     def populate_document(
-        self, doc: DoclingDocument, xml_components: Dict[str, Union[str, List]]
+        self, doc: DoclingDocument, xml_components: Dict[str, Any]
     ) -> DoclingDocument:
         self.add_title(doc, xml_components)
         self.add_authors(doc, xml_components)
@@ -326,7 +325,7 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
         return doc
 
     def add_figure_captions(
-        self, doc: DoclingDocument, xml_components: Dict[str, Union[str, List]]
+        self, doc: DoclingDocument, xml_components: Dict[str, Any]
     ) -> None:
         self.parents["Figures"] = doc.add_heading(
             parent=self.parents["Title"], text="Figures"
@@ -346,9 +345,7 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
             )
         return
 
-    def add_title(
-        self, doc: DoclingDocument, xml_components: Dict[str, Union[str, List]]
-    ) -> None:
+    def add_title(self, doc: DoclingDocument, xml_components: Dict[str, Any]) -> None:
         self.parents["Title"] = doc.add_text(
             parent=None,
             text=xml_components["title"],
@@ -356,9 +353,7 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
         )
         return
 
-    def add_authors(
-        self, doc: DoclingDocument, xml_components: Dict[str, Union[str, List]]
-    ) -> None:
+    def add_authors(self, doc: DoclingDocument, xml_components: Dict[str, Any]) -> None:
         authors_affiliations: list = []
         for author in xml_components["authors"]:
             authors_affiliations.append(author["name"])
@@ -373,7 +368,7 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
         return
 
     def add_abstract(
-        self, doc: DoclingDocument, xml_components: Dict[str, Union[str, List]]
+        self, doc: DoclingDocument, xml_components: Dict[str, Any]
     ) -> None:
         abstract_text: str = xml_components["abstract"].replace("\n", " ").strip()
         if abstract_text.strip():
@@ -388,7 +383,7 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
         return
 
     def add_main_text(
-        self, doc: DoclingDocument, xml_components: Dict[str, Union[str, List]]
+        self, doc: DoclingDocument, xml_components: Dict[str, Any]
     ) -> None:
         added_headers: list = []
         for paragraph in xml_components["paragraphs"]:
@@ -420,7 +415,7 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
         return
 
     def add_references(
-        self, doc: DoclingDocument, xml_components: Dict[str, Union[str, List]]
+        self, doc: DoclingDocument, xml_components: Dict[str, Any]
     ) -> None:
         self.parents["References"] = doc.add_heading(
             parent=self.parents["Title"], text="References"
@@ -454,9 +449,7 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
             )
         return
 
-    def add_tables(
-        self, doc: DoclingDocument, xml_components: Dict[str, Union[str, List]]
-    ) -> None:
+    def add_tables(self, doc: DoclingDocument, xml_components: Dict[str, Any]) -> None:
         self.parents["Tables"] = doc.add_heading(
             parent=self.parents["Title"], text="Tables"
         )
@@ -469,7 +462,7 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
         return
 
     def add_table(
-        self, doc: DoclingDocument, table_xml_component: Dict[str, Union[str, List]]
+        self, doc: DoclingDocument, table_xml_component: Dict[str, Any]
     ) -> None:
         table_xml = table_xml_component["content"].decode("utf-8")
         soup = BeautifulSoup(table_xml, "html.parser")

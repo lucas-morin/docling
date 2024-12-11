@@ -9,11 +9,11 @@ from docling.datamodel.base_models import InputFormat
 from docling.datamodel.document import ConversionResult
 from docling.document_converter import DocumentConverter
 
-logging.basicConfig(
-    level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s"
-)
+# logging.basicConfig(
+#     level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s"
+# )
 
-GENERATE = True
+GENERATE = False
 
 
 def get_xml_paths():
