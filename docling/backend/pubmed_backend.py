@@ -1,11 +1,9 @@
 import logging
 from io import BytesIO
 from pathlib import Path
-from typing import Set, Union
-from lxml import etree
-from itertools import chain
+from typing import Dict, List, Set, Union
 
-import pubmed_parser
+import lxml
 from bs4 import BeautifulSoup
 from docling_core.types.doc import (
     DocItemLabel,
@@ -15,6 +13,7 @@ from docling_core.types.doc import (
     TableCell,
     TableData,
 )
+from lxml import etree
 
 from docling.backend.abstract_backend import DeclarativeDocumentBackend
 from docling.datamodel.base_models import InputFormat
@@ -51,7 +50,7 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
         # Create empty document
         origin = DocumentOrigin(
             filename=self.file.name or "file",
-            mimetype="text/xml",
+            mimetype="application/xml",
             binary_hash=self.document_hash,
         )
         doc = DoclingDocument(name=self.file.stem or "file", origin=origin)
@@ -65,239 +64,256 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
         doc = self.populate_document(doc, xml_components)
         return doc
 
-    def parse_title(self, tree):
-        title_xml = tree.find(".//title-group/article-title")
-        title = " ".join([t.replace("\n", " ") for t in [t for t in title_xml.itertext()]])
+    def parse_title(self, tree: lxml.etree._ElementTree) -> str:
+        title: str = " ".join(
+            [
+                t.replace("\n", "")
+                for t in tree.find(".//title-group/article-title").itertext()
+            ]
+        )
         return title
-        
-    def parse_authors(self, tree):    
+
+    def parse_authors(self, tree: lxml.etree._ElementTree) -> List[Dict]:
         # Get mapping between affiliation ids and names
         affiliation_ids = tree.xpath(".//aff[@id]/@id")
         affiliation_names = []
         for affiliation_xml in tree.xpath(".//aff[@id]"):
-            affiliation_names.append(''.join([t.replace("\n", " ") for t in affiliation_xml.itertext()]))     
-        affiliation_ids_names = {id: name for id, name in zip(affiliation_ids, affiliation_names)}
-        
+            affiliation_names.append(
+                "".join([t.replace("\n", ":") for t in affiliation_xml.itertext()])
+            )
+        affiliation_ids_names = {
+            id: name for id, name in zip(affiliation_ids, affiliation_names)
+        }
+
         # Get author names and affiliation names
-        authors = []
-        for author_xml in tree.xpath('.//contrib-group/contrib[@contrib-type="author"]'):
+        authors: List[Dict] = []
+        for author_xml in tree.xpath(
+            './/contrib-group/contrib[@contrib-type="author"]'
+        ):
             author = {
                 "name": "",
-                "affiliation_names": []
+                "affiliation_names": [],
             }
 
             # Affiliation names
-            affiliation_ids = [a.attrib["rid"] for a in author_xml.findall('xref[@ref-type="aff"]')]
-            author["affiliation_names"] = []
+            affiliation_ids = [
+                a.attrib["rid"] for a in author_xml.findall('xref[@ref-type="aff"]')
+            ]
             for id in affiliation_ids:
                 if id in affiliation_ids_names:
                     author["affiliation_names"].append(affiliation_ids_names[id])
-            
+
             # Name
-            author["name"] = author_xml.find("name/surname").text + " " + author_xml.find("name/given-names").text 
+            author["name"] = (
+                author_xml.find("name/surname").text
+                + " "
+                + author_xml.find("name/given-names").text
+            )
 
             authors.append(author)
         return authors
-    
-    def parse_abstract(self, tree):       
+
+    def parse_abstract(self, tree: lxml.etree._ElementTree) -> str:
         texts = []
         for abstract_xml in tree.findall(".//abstract"):
             for text in abstract_xml.itertext():
-                texts.append(text.replace("\n", " ").strip())
-        abstract = " ".join(texts)
+                texts.append(text.replace("\n", "").strip())
+        abstract: str = "".join(texts)
         return abstract
-    
-    def parse_main_text(self, tree):
-        paragraphs = []
-        for paragraph_xml in tree.xpath("//body//p"):    
-            paragraph = {
-                "text": "",
-                "section": ""
-            }       
+
+    def parse_main_text(self, tree: lxml.etree._ElementTree) -> List[Dict]:
+        paragraphs: List[Dict] = []
+        for paragraph_xml in tree.xpath("//body//p"):
+            # Skip captions
+            if "/caption" in paragraph_xml.getroottree().getpath(paragraph_xml):
+                continue
+
+            paragraph = {"text": "", "headers": []}
 
             # Text
-            paragraph["text"] = " ".join([t.replace("\n", " ") for t in paragraph_xml.itertext()])
+            paragraph["text"] = "".join(
+                [t.replace("\n", "") for t in paragraph_xml.itertext()]
+            )
 
-            # Section
-            section_xml = paragraph_xml.find("../title")
-            if section_xml != None:
-                paragraph["section"] = " ".join([t.replace("\n", " ") for t in section_xml.itertext()])
-            
+            # Header
+            path = "../title"
+            while paragraph_xml.find(path) != None:
+                paragraph["headers"].append(
+                    "".join(
+                        [
+                            t.replace("\n", "")
+                            for t in paragraph_xml.find(path).itertext()
+                        ]
+                    )
+                )
+                path = "../" + path
+
             paragraphs.append(paragraph)
+
         return paragraphs
-    
-    def parse_tables(self, tree):
-        tables = []
+
+    def parse_tables(self, tree: lxml.etree._ElementTree) -> List[Dict]:
+        tables: List[Dict] = []
         for table_xml in tree.xpath(".//body//table-wrap"):
-            table = {
-                "label": "",
-                "caption": "",
-                "content": ""
-            }
-            
+            table = {"label": "", "caption": "", "content": ""}
+
             # Content
-            if table_xml.find("table") is not None:
+            if table_xml.find("table") != None:
                 table_content_xml = table_xml.find("table")
-            elif table_xml.find("alternatives/table") is not None:
+            elif table_xml.find("alternatives/table") != None:
                 table_content_xml = table_xml.find("alternatives/table")
             else:
                 table_content_xml = None
-            if table_content_xml is not None:
+            if table_content_xml != None:
                 table["content"] = etree.tostring(table_content_xml)
-            
+
             # Caption
-            if table_xml.find("caption/p") is not None:
+            if table_xml.find("caption/p") != None:
                 caption_xml = table_xml.find("caption/p")
-            elif table_xml.find("caption/title") is not None:
+            elif table_xml.find("caption/title") != None:
                 caption_xml = table_xml.find("caption/title")
             else:
                 caption_xml = None
-            if caption_xml is not None:
-                table["caption"] = " ".join([t.replace("\n", " ") for t in caption_xml.itertext()])  
-            
-            # Label 
-            if table_xml.find("label") is not None:
-                table["label"] = table_xml.find("label").text
-            
-            tables.append(table)
-        return tables 
-    
-    def parse_figure_captions(self, tree):
-        figure_captions = []
+            if caption_xml != None:
+                table["caption"] = "".join(
+                    [t.replace("\n", "") for t in caption_xml.itertext()]
+                )
 
-        figures_xml = tree.findall(".//fig")
-        if figures_xml is None:
+            # Label
+            if table_xml.find("label") != None:
+                table["label"] = table_xml.find("label").text
+
+            tables.append(table)
+        return tables
+
+    def parse_figure_captions(self, tree: lxml.etree._ElementTree) -> List[Dict]:
+        figure_captions: List[Dict] = []
+
+        if tree.findall(".//fig") == None:
             return figure_captions
-        
-        for figure_xml in figures_xml:
+
+        for figure_xml in tree.findall(".//fig"):
             figure_caption = {
                 "caption": "",
                 "label": "",
             }
 
             # Label
-            label_xml = figure_xml.find("label")
-            if label_xml is not None:
-                figure_caption["label"] = " ".join([t.replace("\n", " ") for t in label_xml.itertext()])  
+            if figure_xml.find("label") != None:
+                figure_caption["label"] = "".join(
+                    [t.replace("\n", "") for t in figure_xml.find("label").itertext()]
+                )
 
             # Caption
-            captions_xml = figure_xml.find("caption")
-            if captions_xml is not None:
-                caption = []
-                for caption_xml in captions_xml.getchildren():
-                    caption += [t.replace("\n", " ") for t in caption_xml.itertext()]                
-                figure_caption["caption"] = " ".join(caption)
-                
+            if figure_xml.find("caption") != None:
+                caption = ""
+                for caption_xml in figure_xml.find("caption").getchildren():
+                    caption += (
+                        "".join([t.replace("\n", "") for t in caption_xml.itertext()])
+                        + "\n"
+                    )
+                figure_caption["caption"] = caption
+
             figure_captions.append(figure_caption)
-        
+
         return figure_captions
-    
-    def parse_references(self, tree):
-        references = []
+
+    def parse_references(self, tree: lxml.etree._ElementTree) -> List[Dict]:
+        references: List[Dict] = []
         for reference_xml_abs in tree.xpath(".//ref-list/ref[@id]"):
             reference = {
                 "author_names": "",
-                "title": "",    
-                "journal": "",        
-                "year": "",                
+                "title": "",
+                "journal": "",
+                "year": "",
             }
             reference_xml = None
             for tag in ["mixed-citation", "element-citation", "citation"]:
-                reference_xml =  reference_xml_abs.find(tag)
+                reference_xml = reference_xml_abs.find(tag)
                 if reference_xml != None:
                     break
 
-            if reference_xml is None:
+            if reference_xml == None:
                 continue
-            
-            if not(any(ref_type in ["citation-type", "publication-type"] for ref_type in reference_xml.attrib.keys())):
-                continue 
-            
+
+            if all(
+                not (ref_type in ["citation-type", "publication-type"])
+                for ref_type in reference_xml.attrib.keys()
+            ):
+                continue
+
             # Author names
             names = []
-            if reference_xml.find("name") is not None:
+            if reference_xml.find("name") != None:
                 for name_xml in reference_xml.findall("name"):
                     name = [t.text for t in name_xml.getchildren()][::-1]
                     name = " ".join([t for t in name if t != None])
                     names.append(name)
-            elif reference_xml.find("person-group") is not None:
+            elif reference_xml.find("person-group") != None:
                 for name_xml in reference_xml.find("person-group"):
-                    name = " ".join(name_xml.xpath("given-names/text()") + name_xml.xpath("surname/text()"))
+                    name = " ".join(
+                        name_xml.xpath("given-names/text()")
+                        + name_xml.xpath("surname/text()")
+                    )
                     names.append(name)
             reference["author_names"] = "; ".join(names)
 
             # Title
-            if reference_xml.find("article-title") is not None:
-                reference["title"] = " ".join([t.replace("\n", " ") for t in reference_xml.find("article-title").itertext()])        
-            
+            if reference_xml.find("article-title") != None:
+                reference["title"] = " ".join(
+                    [
+                        t.replace("\n", " ")
+                        for t in reference_xml.find("article-title").itertext()
+                    ]
+                )
+
             # Journal
-            if reference_xml.find("source") is not None:
-                reference["journal"] = reference_xml.find("source").text 
-           
+            if reference_xml.find("source") != None:
+                reference["journal"] = reference_xml.find("source").text
+
             # Year
-            if reference_xml.find("year") is not None:
+            if reference_xml.find("year") != None:
                 reference["year"] = reference_xml.find("year").text
-            
+
+            if (
+                (reference_xml.find("article-title") == None)
+                and (reference_xml.find("journal") == None)
+                and (reference_xml.find("year") == None)
+            ):
+                reference["title"] = reference_xml.text
+
             references.append(reference)
         return references
-    
-    def parse(self, filename: str) -> dict:
+
+    def parse(self, filename: str) -> Dict[str, Union[str, List]]:
         """Parsing PubMed document."""
-        tree = etree.parse(filename)   
+        tree = etree.parse(filename)
 
-        title = self.parse_title(tree)
-        _log.debug(f"Title:")
-        _log.debug(title)
-        _log.debug(f"=============================================================")
+        title: str = self.parse_title(tree)
+        authors: List[Dict] = self.parse_authors(tree)
+        abstract: str = self.parse_abstract(tree)
+        paragraphs: List[Dict] = self.parse_main_text(tree)
+        tables: List[Dict] = self.parse_tables(tree)
+        figure_captions: List[Dict] = self.parse_figure_captions(tree)
+        references: List[Dict] = self.parse_references(tree)
 
-        authors = self.parse_authors(tree)
-        _log.debug(f"Authors:")
-        _log.debug(authors)
-        _log.debug(f"=============================================================")
-
-        abstract = self.parse_abstract(tree)
-        _log.debug(f"Abstract:")
-        _log.debug(abstract)
-        _log.debug(f"=============================================================")
-
-        paragraphs = self.parse_main_text(tree)
-        _log.debug(f"Paragraphs:")
-        _log.debug(paragraphs)
-        _log.debug(f"=============================================================")
-
-        tables = self.parse_tables(tree)
-        _log.debug(f"Tables:")
-        _log.debug(tables)
-        _log.debug(f"=============================================================")
-
-        figure_captions = self.parse_figure_captions(tree)
-        _log.debug(f"Figure captions:")
-        _log.debug(figure_captions)
-        _log.debug(f"=============================================================")
-
-        references = self.parse_references(tree)
-        _log.debug(f"References:")
-        _log.debug(references)
-        _log.debug(f"=============================================================")
-
-        xml_components = {
+        xml_components: Dict[str, Union[str, List]] = {
             "title": title,
             "authors": authors,
             "abstract": abstract,
             "paragraphs": paragraphs,
             "tables": tables,
             "figure_captions": figure_captions,
-            "references": references,            
+            "references": references,
         }
         return xml_components
 
     def populate_document(
-        self, doc: DoclingDocument, xml_components: dict
+        self, doc: DoclingDocument, xml_components: Dict[str, Union[str, List]]
     ) -> DoclingDocument:
         self.add_title(doc, xml_components)
         self.add_authors(doc, xml_components)
         self.add_abstract(doc, xml_components)
-        
         self.add_main_text(doc, xml_components)
 
         if xml_components["tables"] != []:
@@ -307,27 +323,32 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
             self.add_figure_captions(doc, xml_components)
 
         self.add_references(doc, xml_components)
-
         return doc
 
-    def add_figure_captions(self, doc: DoclingDocument, xml_components: dict) -> None:
-        doc.add_heading(parent=self.parents["Title"], text="Figures")
+    def add_figure_captions(
+        self, doc: DoclingDocument, xml_components: Dict[str, Union[str, List]]
+    ) -> None:
+        self.parents["Figures"] = doc.add_heading(
+            parent=self.parents["Title"], text="Figures"
+        )
         for figure_caption_xml_component in xml_components["figure_captions"]:
             figure_caption_text = (
                 figure_caption_xml_component["label"]
-                + " "
-                + figure_caption_xml_component["caption"].replace("\n", "")
+                + ": "
+                + figure_caption_xml_component["caption"]
             )
             fig_caption = doc.add_text(
                 label=DocItemLabel.CAPTION, text=figure_caption_text
             )
             doc.add_picture(
-                parent=self.parents["Title"],
+                parent=self.parents["Figures"],
                 caption=fig_caption,
             )
         return
 
-    def add_title(self, doc: DoclingDocument, xml_components: dict) -> None:
+    def add_title(
+        self, doc: DoclingDocument, xml_components: Dict[str, Union[str, List]]
+    ) -> None:
         self.parents["Title"] = doc.add_text(
             parent=None,
             text=xml_components["title"],
@@ -335,24 +356,26 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
         )
         return
 
-    def add_authors(self, doc: DoclingDocument, xml_components: dict) -> None:
+    def add_authors(
+        self, doc: DoclingDocument, xml_components: Dict[str, Union[str, List]]
+    ) -> None:
         authors_affiliations: list = []
         for author in xml_components["authors"]:
             authors_affiliations.append(author["name"])
             authors_affiliations.append(", ".join(author["affiliation_names"]))
         authors_affiliations_str = "; ".join(authors_affiliations)
-         
+
         doc.add_text(
             parent=self.parents["Title"],
-            text=authors_affiliations_str ,
+            text=authors_affiliations_str,
             label=DocItemLabel.PARAGRAPH,
         )
         return
 
-    def add_abstract(self, doc: DoclingDocument, xml_components: dict) -> None:
-        abstract_text: str = (
-            xml_components["abstract"].replace("\n", " ").strip()
-        )
+    def add_abstract(
+        self, doc: DoclingDocument, xml_components: Dict[str, Union[str, List]]
+    ) -> None:
+        abstract_text: str = xml_components["abstract"].replace("\n", " ").strip()
         if abstract_text.strip():
             self.parents["Abstract"] = doc.add_heading(
                 parent=self.parents["Title"], text="Abstract"
@@ -364,34 +387,41 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
             )
         return
 
-    def add_main_text(self, doc: DoclingDocument, xml_components: dict) -> None:
-        sections: list = []
+    def add_main_text(
+        self, doc: DoclingDocument, xml_components: Dict[str, Union[str, List]]
+    ) -> None:
+        added_headers: list = []
         for paragraph in xml_components["paragraphs"]:
-            if ("section" in paragraph) and (paragraph["section"] == ""):
+            if paragraph["headers"] == []:
                 continue
 
-            if "section" in paragraph and paragraph["section"] not in sections:
-                section: str = paragraph["section"].replace("\n", " ").strip()
-                sections.append(section)
-                if section in self.parents:
-                    parent = self.parents[section]
+            # Add header
+            for i, header in enumerate(reversed(paragraph["headers"])):
+                if header in added_headers:
+                    continue
+                added_headers.append(header)
+
+                if ((i - 1) >= 0) and list(reversed(paragraph["headers"]))[
+                    i - 1
+                ] in self.parents:
+                    parent = self.parents[list(reversed(paragraph["headers"]))[i - 1]]
                 else:
                     parent = self.parents["Title"]
 
-                self.parents[section] = doc.add_heading(parent=parent, text=section)
+                self.parents[header] = doc.add_heading(parent=parent, text=header)
 
-            if "text" in paragraph:
-                text: str = paragraph["text"].replace("\n", " ").strip()
+            # Add paragraph text
+            if paragraph["headers"][0] in self.parents:
+                parent = self.parents[paragraph["headers"][0]]
+            else:
+                parent = self.parents["Title"]
 
-                if paragraph["section"] in self.parents:
-                    parent = self.parents[paragraph["section"]]
-                else:
-                    parent = self.parents["Title"]
-
-                doc.add_text(parent=parent, label=DocItemLabel.TEXT, text=text)
+            doc.add_text(parent=parent, label=DocItemLabel.TEXT, text=paragraph["text"])
         return
 
-    def add_references(self, doc: DoclingDocument, xml_components: dict) -> None:
+    def add_references(
+        self, doc: DoclingDocument, xml_components: Dict[str, Union[str, List]]
+    ) -> None:
         self.parents["References"] = doc.add_heading(
             parent=self.parents["Title"], text="References"
         )
@@ -424,7 +454,9 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
             )
         return
 
-    def add_tables(self, doc: DoclingDocument, xml_components: dict) -> None:
+    def add_tables(
+        self, doc: DoclingDocument, xml_components: Dict[str, Union[str, List]]
+    ) -> None:
         self.parents["Tables"] = doc.add_heading(
             parent=self.parents["Title"], text="Tables"
         )
@@ -436,13 +468,15 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
                 pass
         return
 
-    def add_table(self, doc: DoclingDocument, table_xml_component: dict) -> None:
+    def add_table(
+        self, doc: DoclingDocument, table_xml_component: Dict[str, Union[str, List]]
+    ) -> None:
         table_xml = table_xml_component["content"].decode("utf-8")
         soup = BeautifulSoup(table_xml, "html.parser")
         table_tag = soup.find("table")
 
         nested_tables = table_tag.find("table")
-        if nested_tables is not None:
+        if nested_tables != None:
             _log.debug(f"Skipping nested table for: {str(self.file)}")
             return
 
@@ -464,7 +498,6 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
 
         # Iterate over the rows in the table
         for row_idx, row in enumerate(table_tag.find_all("tr")):
-
             # For each row, find all the column cells (both <td> and <th>)
             cells = row.find_all(["td", "th"])
 
@@ -474,15 +507,15 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
                 if html_cell.name == "td":
                     col_header = False
 
-            col_idx = 0
             # Extract and print the text content of each cell
+            col_idx = 0
             for _, html_cell in enumerate(cells):
                 text = html_cell.text
 
                 col_span = int(html_cell.get("colspan", 1))
                 row_span = int(html_cell.get("rowspan", 1))
 
-                while grid[row_idx][col_idx] is not None:
+                while grid[row_idx][col_idx] != None:
                     col_idx += 1
                 for r in range(row_span):
                     for c in range(col_span):
@@ -503,7 +536,7 @@ class PubMedDocumentBackend(DeclarativeDocumentBackend):
 
         table_caption = doc.add_text(
             label=DocItemLabel.CAPTION,
-            text=table_xml_component["label"] + " " + table_xml_component["caption"],
+            text=table_xml_component["label"] + ": " + table_xml_component["caption"],
         )
         doc.add_table(data=data, parent=self.parents["Tables"], caption=table_caption)
         return

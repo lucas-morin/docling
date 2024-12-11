@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "name": "pntd.0008301",
   "origin": {
-    "mimetype": "text/xml",
+    "mimetype": "application/xml",
     "binary_hash": 10315162465449768094,
     "filename": "pntd.0008301.nxml"
   },
@@ -188,6 +188,27 @@
         },
         {
           "$ref": "#/texts/108"
+        },
+        {
+          "$ref": "#/texts/109"
+        },
+        {
+          "$ref": "#/texts/110"
+        },
+        {
+          "$ref": "#/texts/111"
+        },
+        {
+          "$ref": "#/texts/112"
+        },
+        {
+          "$ref": "#/texts/113"
+        },
+        {
+          "$ref": "#/texts/114"
+        },
+        {
+          "$ref": "#/texts/115"
         }
       ],
       "name": "list",
@@ -214,33 +235,6 @@
           "$ref": "#/texts/10"
         },
         {
-          "$ref": "#/texts/13"
-        },
-        {
-          "$ref": "#/texts/15"
-        },
-        {
-          "$ref": "#/texts/18"
-        },
-        {
-          "$ref": "#/texts/20"
-        },
-        {
-          "$ref": "#/texts/22"
-        },
-        {
-          "$ref": "#/texts/26"
-        },
-        {
-          "$ref": "#/texts/29"
-        },
-        {
-          "$ref": "#/texts/31"
-        },
-        {
-          "$ref": "#/texts/33"
-        },
-        {
           "$ref": "#/texts/36"
         },
         {
@@ -251,21 +245,6 @@
         },
         {
           "$ref": "#/texts/56"
-        },
-        {
-          "$ref": "#/pictures/0"
-        },
-        {
-          "$ref": "#/pictures/1"
-        },
-        {
-          "$ref": "#/pictures/2"
-        },
-        {
-          "$ref": "#/pictures/3"
-        },
-        {
-          "$ref": "#/pictures/4"
         },
         {
           "$ref": "#/texts/62"
@@ -284,8 +263,8 @@
       "children": [],
       "label": "paragraph",
       "prov": [],
-      "orig": "Burgert-Brucker Clara R.; 1 Global Health Division, RTI International, Washington, DC, United States of America; Zoerhoff Kathryn L.; 1 Global Health Division, RTI International, Washington, DC, United States of America; Headland Maureen; 1 Global Health Division, RTI International, Washington, DC, United States of America, 2 Global Health, Population, and Nutrition, FHI 360, Washington, DC, United States of America; Shoemaker Erica A.; 1 Global Health Division, RTI International, Washington, DC, United States of America; Stelmach Rachel; 1 Global Health Division, RTI International, Washington, DC, United States of America; Karim Mohammad Jahirul; 3 Department of Disease Control, Ministry of Health and Family Welfare, Dhaka, Bangladesh; Batcho Wilfrid; 4 National Control Program of Communicable Diseases, Ministry of Health, Cotonou, Benin; Bougouma Clarisse; 5 Lymphatic Filariasis Elimination Program, Minist\u00e8re de la Sant\u00e9, Ouagadougou, Burkina Faso; Bougma Roland; 5 Lymphatic Filariasis Elimination Program, Minist\u00e8re de la Sant\u00e9, Ouagadougou, Burkina Faso; Benjamin Didier Biholong; 6 National Onchocerciasis and Lymphatic Filariasis Control Program, Ministry of Health, Yaounde, Cameroon; Georges Nko'Ayissi; 6 National Onchocerciasis and Lymphatic Filariasis Control Program, Ministry of Health, Yaounde, Cameroon; Marfo Benjamin; 7 Neglected Tropical Diseases Programme, Ghana Health Service, Accra, Ghana; Lemoine Jean Frantz; 8 Ministry of Health, Port-au-Prince, Haiti; Pangaribuan Helena Ullyartha; 9 National Institute Health Research & Development, Ministry of Health, Jakarta, Indonesia; Wijayanti Eksi; 9 National Institute Health Research & Development, Ministry of Health, Jakarta, Indonesia; Coulibaly Yaya Ibrahim; 10 Filariasis Unit, International Center of Excellence in Research, Faculty of Medicine and Odontostomatology, Bamako, Mali; Doumbia Salif Seriba; 10 Filariasis Unit, International Center of Excellence in Research, Faculty of Medicine and Odontostomatology, Bamako, Mali; Rimal Pradip; 11 Epidemiology and Disease Control Division, Department of Health Service, Kathmandu, Nepal; Salissou Adamou Bacthiri; 12 Programme Onchocercose et Filariose Lymphatique, Minist\u00e8re de la Sant\u00e9, Niamey, Niger; Bah Yukaba; 13 National Neglected Tropical Disease Program, Ministry of Health and Sanitation, Freetown, Sierra Leone; Mwingira Upendo; 14 Neglected Tropical Disease Control Programme, National Institute for Medical Research, Dar es Salaam, Tanzania; Nshala Andreas; 15 IMA World Health/Tanzania NTD Control Programme, Uppsala University, & TIBA Fellow, Dar es Salaam, Tanzania; Muheki Edridah; 16 Programme to Eliminate Lymphatic Filariasis, Ministry of Health, Kampala, Uganda; Shott Joseph; 17 Division of Neglected Tropical Diseases, Office of Infectious Diseases, Bureau for Global Health, USAID, Washington, DC, United States of America; Yevstigneyeva Violetta; 17 Division of Neglected Tropical Diseases, Office of Infectious Diseases, Bureau for Global Health, USAID, Washington, DC, United States of America; Ndayishimye Egide; 2 Global Health, Population, and Nutrition, FHI 360, Washington, DC, United States of America; Baker Margaret; 1 Global Health Division, RTI International, Washington, DC, United States of America; Kraemer John; 1 Global Health Division, RTI International, Washington, DC, United States of America, 18 Georgetown University, Washington, DC, United States of America; Brady Molly; 1 Global Health Division, RTI International, Washington, DC, United States of America",
-      "text": "Burgert-Brucker Clara R.; 1 Global Health Division, RTI International, Washington, DC, United States of America; Zoerhoff Kathryn L.; 1 Global Health Division, RTI International, Washington, DC, United States of America; Headland Maureen; 1 Global Health Division, RTI International, Washington, DC, United States of America, 2 Global Health, Population, and Nutrition, FHI 360, Washington, DC, United States of America; Shoemaker Erica A.; 1 Global Health Division, RTI International, Washington, DC, United States of America; Stelmach Rachel; 1 Global Health Division, RTI International, Washington, DC, United States of America; Karim Mohammad Jahirul; 3 Department of Disease Control, Ministry of Health and Family Welfare, Dhaka, Bangladesh; Batcho Wilfrid; 4 National Control Program of Communicable Diseases, Ministry of Health, Cotonou, Benin; Bougouma Clarisse; 5 Lymphatic Filariasis Elimination Program, Minist\u00e8re de la Sant\u00e9, Ouagadougou, Burkina Faso; Bougma Roland; 5 Lymphatic Filariasis Elimination Program, Minist\u00e8re de la Sant\u00e9, Ouagadougou, Burkina Faso; Benjamin Didier Biholong; 6 National Onchocerciasis and Lymphatic Filariasis Control Program, Ministry of Health, Yaounde, Cameroon; Georges Nko'Ayissi; 6 National Onchocerciasis and Lymphatic Filariasis Control Program, Ministry of Health, Yaounde, Cameroon; Marfo Benjamin; 7 Neglected Tropical Diseases Programme, Ghana Health Service, Accra, Ghana; Lemoine Jean Frantz; 8 Ministry of Health, Port-au-Prince, Haiti; Pangaribuan Helena Ullyartha; 9 National Institute Health Research & Development, Ministry of Health, Jakarta, Indonesia; Wijayanti Eksi; 9 National Institute Health Research & Development, Ministry of Health, Jakarta, Indonesia; Coulibaly Yaya Ibrahim; 10 Filariasis Unit, International Center of Excellence in Research, Faculty of Medicine and Odontostomatology, Bamako, Mali; Doumbia Salif Seriba; 10 Filariasis Unit, International Center of Excellence in Research, Faculty of Medicine and Odontostomatology, Bamako, Mali; Rimal Pradip; 11 Epidemiology and Disease Control Division, Department of Health Service, Kathmandu, Nepal; Salissou Adamou Bacthiri; 12 Programme Onchocercose et Filariose Lymphatique, Minist\u00e8re de la Sant\u00e9, Niamey, Niger; Bah Yukaba; 13 National Neglected Tropical Disease Program, Ministry of Health and Sanitation, Freetown, Sierra Leone; Mwingira Upendo; 14 Neglected Tropical Disease Control Programme, National Institute for Medical Research, Dar es Salaam, Tanzania; Nshala Andreas; 15 IMA World Health/Tanzania NTD Control Programme, Uppsala University, & TIBA Fellow, Dar es Salaam, Tanzania; Muheki Edridah; 16 Programme to Eliminate Lymphatic Filariasis, Ministry of Health, Kampala, Uganda; Shott Joseph; 17 Division of Neglected Tropical Diseases, Office of Infectious Diseases, Bureau for Global Health, USAID, Washington, DC, United States of America; Yevstigneyeva Violetta; 17 Division of Neglected Tropical Diseases, Office of Infectious Diseases, Bureau for Global Health, USAID, Washington, DC, United States of America; Ndayishimye Egide; 2 Global Health, Population, and Nutrition, FHI 360, Washington, DC, United States of America; Baker Margaret; 1 Global Health Division, RTI International, Washington, DC, United States of America; Kraemer John; 1 Global Health Division, RTI International, Washington, DC, United States of America, 18 Georgetown University, Washington, DC, United States of America; Brady Molly; 1 Global Health Division, RTI International, Washington, DC, United States of America"
+      "orig": "Burgert-Brucker Clara R.; 1:Global Health Division, RTI International, Washington, DC, United States of America; Zoerhoff Kathryn L.; 1:Global Health Division, RTI International, Washington, DC, United States of America; Headland Maureen; 1:Global Health Division, RTI International, Washington, DC, United States of America, 2:Global Health, Population, and Nutrition, FHI 360, Washington, DC, United States of America; Shoemaker Erica A.; 1:Global Health Division, RTI International, Washington, DC, United States of America; Stelmach Rachel; 1:Global Health Division, RTI International, Washington, DC, United States of America; Karim Mohammad Jahirul; 3:Department of Disease Control, Ministry of Health and Family Welfare, Dhaka, Bangladesh; Batcho Wilfrid; 4:National Control Program of Communicable Diseases, Ministry of Health, Cotonou, Benin; Bougouma Clarisse; 5:Lymphatic Filariasis Elimination Program, Minist\u00e8re de la Sant\u00e9, Ouagadougou, Burkina Faso; Bougma Roland; 5:Lymphatic Filariasis Elimination Program, Minist\u00e8re de la Sant\u00e9, Ouagadougou, Burkina Faso; Benjamin Didier Biholong; 6:National Onchocerciasis and Lymphatic Filariasis Control Program, Ministry of Health, Yaounde, Cameroon; Georges Nko'Ayissi; 6:National Onchocerciasis and Lymphatic Filariasis Control Program, Ministry of Health, Yaounde, Cameroon; Marfo Benjamin; 7:Neglected Tropical Diseases Programme, Ghana Health Service, Accra, Ghana; Lemoine Jean Frantz; 8:Ministry of Health, Port-au-Prince, Haiti; Pangaribuan Helena Ullyartha; 9:National Institute Health Research & Development, Ministry of Health, Jakarta, Indonesia; Wijayanti Eksi; 9:National Institute Health Research & Development, Ministry of Health, Jakarta, Indonesia; Coulibaly Yaya Ibrahim; 10:Filariasis Unit, International Center of Excellence in Research, Faculty of Medicine and Odontostomatology, Bamako, Mali; Doumbia Salif Seriba; 10:Filariasis Unit, International Center of Excellence in Research, Faculty of Medicine and Odontostomatology, Bamako, Mali; Rimal Pradip; 11:Epidemiology and Disease Control Division, Department of Health Service, Kathmandu, Nepal; Salissou Adamou Bacthiri; 12:Programme Onchocercose et Filariose Lymphatique, Minist\u00e8re de la Sant\u00e9, Niamey, Niger; Bah Yukaba; 13:National Neglected Tropical Disease Program, Ministry of Health and Sanitation, Freetown, Sierra Leone; Mwingira Upendo; 14:Neglected Tropical Disease Control Programme, National Institute for Medical Research, Dar es Salaam, Tanzania; Nshala Andreas; 15:IMA World Health/Tanzania NTD Control Programme, Uppsala University, & TIBA Fellow, Dar es Salaam, Tanzania; Muheki Edridah; 16:Programme to Eliminate Lymphatic Filariasis, Ministry of Health, Kampala, Uganda; Shott Joseph; 17:Division of Neglected Tropical Diseases, Office of Infectious Diseases, Bureau for Global Health, USAID, Washington, DC, United States of America; Yevstigneyeva Violetta; 17:Division of Neglected Tropical Diseases, Office of Infectious Diseases, Bureau for Global Health, USAID, Washington, DC, United States of America; Ndayishimye Egide; 2:Global Health, Population, and Nutrition, FHI 360, Washington, DC, United States of America; Baker Margaret; 1:Global Health Division, RTI International, Washington, DC, United States of America; Kraemer John; 1:Global Health Division, RTI International, Washington, DC, United States of America, 18:Georgetown University, Washington, DC, United States of America; Brady Molly; 1:Global Health Division, RTI International, Washington, DC, United States of America",
+      "text": "Burgert-Brucker Clara R.; 1:Global Health Division, RTI International, Washington, DC, United States of America; Zoerhoff Kathryn L.; 1:Global Health Division, RTI International, Washington, DC, United States of America; Headland Maureen; 1:Global Health Division, RTI International, Washington, DC, United States of America, 2:Global Health, Population, and Nutrition, FHI 360, Washington, DC, United States of America; Shoemaker Erica A.; 1:Global Health Division, RTI International, Washington, DC, United States of America; Stelmach Rachel; 1:Global Health Division, RTI International, Washington, DC, United States of America; Karim Mohammad Jahirul; 3:Department of Disease Control, Ministry of Health and Family Welfare, Dhaka, Bangladesh; Batcho Wilfrid; 4:National Control Program of Communicable Diseases, Ministry of Health, Cotonou, Benin; Bougouma Clarisse; 5:Lymphatic Filariasis Elimination Program, Minist\u00e8re de la Sant\u00e9, Ouagadougou, Burkina Faso; Bougma Roland; 5:Lymphatic Filariasis Elimination Program, Minist\u00e8re de la Sant\u00e9, Ouagadougou, Burkina Faso; Benjamin Didier Biholong; 6:National Onchocerciasis and Lymphatic Filariasis Control Program, Ministry of Health, Yaounde, Cameroon; Georges Nko'Ayissi; 6:National Onchocerciasis and Lymphatic Filariasis Control Program, Ministry of Health, Yaounde, Cameroon; Marfo Benjamin; 7:Neglected Tropical Diseases Programme, Ghana Health Service, Accra, Ghana; Lemoine Jean Frantz; 8:Ministry of Health, Port-au-Prince, Haiti; Pangaribuan Helena Ullyartha; 9:National Institute Health Research & Development, Ministry of Health, Jakarta, Indonesia; Wijayanti Eksi; 9:National Institute Health Research & Development, Ministry of Health, Jakarta, Indonesia; Coulibaly Yaya Ibrahim; 10:Filariasis Unit, International Center of Excellence in Research, Faculty of Medicine and Odontostomatology, Bamako, Mali; Doumbia Salif Seriba; 10:Filariasis Unit, International Center of Excellence in Research, Faculty of Medicine and Odontostomatology, Bamako, Mali; Rimal Pradip; 11:Epidemiology and Disease Control Division, Department of Health Service, Kathmandu, Nepal; Salissou Adamou Bacthiri; 12:Programme Onchocercose et Filariose Lymphatique, Minist\u00e8re de la Sant\u00e9, Niamey, Niger; Bah Yukaba; 13:National Neglected Tropical Disease Program, Ministry of Health and Sanitation, Freetown, Sierra Leone; Mwingira Upendo; 14:Neglected Tropical Disease Control Programme, National Institute for Medical Research, Dar es Salaam, Tanzania; Nshala Andreas; 15:IMA World Health/Tanzania NTD Control Programme, Uppsala University, & TIBA Fellow, Dar es Salaam, Tanzania; Muheki Edridah; 16:Programme to Eliminate Lymphatic Filariasis, Ministry of Health, Kampala, Uganda; Shott Joseph; 17:Division of Neglected Tropical Diseases, Office of Infectious Diseases, Bureau for Global Health, USAID, Washington, DC, United States of America; Yevstigneyeva Violetta; 17:Division of Neglected Tropical Diseases, Office of Infectious Diseases, Bureau for Global Health, USAID, Washington, DC, United States of America; Ndayishimye Egide; 2:Global Health, Population, and Nutrition, FHI 360, Washington, DC, United States of America; Baker Margaret; 1:Global Health Division, RTI International, Washington, DC, United States of America; Kraemer John; 1:Global Health Division, RTI International, Washington, DC, United States of America, 18:Georgetown University, Washington, DC, United States of America; Brady Molly; 1:Global Health Division, RTI International, Washington, DC, United States of America"
     },
     {
       "self_ref": "#/texts/2",
@@ -311,8 +290,8 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "Achieving elimination of lymphatic filariasis (LF) as a public health problem requires a minimum of five effective rounds of mass drug administration (MDA) and demonstrating low prevalence in subsequent assessments. The first assessments recommended by the World Health Organization (WHO) are sentinel and spot-check sites\u2014referred to as pre-transmission assessment surveys (pre-TAS)\u2014in each implementation unit after MDA. If pre-TAS shows that prevalence in each site has been lowered to less than 1% microfilaremia or less than 2% antigenemia, the implementation unit conducts a TAS to determine whether MDA can be stopped. Failure to pass pre-TAS means that further rounds of MDA are required. This study aims to understand factors influencing pre-TAS results using existing programmatic data from 554 implementation units, of which 74 (13%) failed, in 13 countries. Secondary data analysis was completed using existing data from Bangladesh, Benin, Burkina Faso, Cameroon, Ghana, Haiti, Indonesia, Mali, Nepal, Niger, Sierra Leone, Tanzania, and Uganda. Additional covariate data were obtained from spatial raster data sets. Bivariate analysis and multilinear regression were performed to establish potential relationships between variables and the pre-TAS result. Higher baseline prevalence and lower elevation were significant in the regression model. Variables statistically significantly associated with failure (p-value \u22640.05) in the bivariate analyses included baseline prevalence at or above 5% or 10%, use of Filariasis Test Strips (FTS), primary vector of Culex , treatment with diethylcarbamazine-albendazole, higher elevation, higher population density, higher enhanced vegetation index (EVI), higher annual rainfall, and 6 or more rounds of MDA. This paper reports for the first time factors associated with pre-TAS results from a multi-country analysis. This information can help countries more effectively forecast program activities, such as the potential need for more rounds of MDA, and prioritize resources to ensure adequate coverage of all persons in areas at highest risk of failing pre-TAS. Author summary Achieving elimination of lymphatic filariasis (LF) as a public health problem requires a minimum of five rounds of mass drug administration (MDA) and being able to demonstrate low prevalence in several subsequent assessments. LF elimination programs implement sentinel and spot-check site assessments, called pre-TAS, to determine whether districts are eligible to implement more rigorous population-based surveys to determine whether MDA can be stopped or if further rounds are required. Reasons for failing pre-TAS are not well understood and have not previously been examined with data compiled from multiple countries. For this analysis, we analyzed data from routine USAID and WHO reports from Bangladesh, Benin, Burkina Faso, Cameroon, Ghana, Haiti, Indonesia, Mali, Nepal, Niger, Sierra Leone, Tanzania, and Uganda. In a model that included multiple variables, high baseline prevalence and lower elevation were significant. In models comparing only one variable to the outcome, the following were statistically significantly associated with failure: higher baseline prevalence at or above 5% or 10%, use of the FTS, primary vector of Culex , treatment with diethylcarbamazine-albendazole, lower elevation, higher population density, higher Enhanced Vegetation Index, higher annual rainfall, and six or more rounds of mass drug administration. These results can help national programs plan MDA more effectively, e.g., by focusing resources on areas with higher baseline prevalence and/or lower elevation.",
-      "text": "Achieving elimination of lymphatic filariasis (LF) as a public health problem requires a minimum of five effective rounds of mass drug administration (MDA) and demonstrating low prevalence in subsequent assessments. The first assessments recommended by the World Health Organization (WHO) are sentinel and spot-check sites\u2014referred to as pre-transmission assessment surveys (pre-TAS)\u2014in each implementation unit after MDA. If pre-TAS shows that prevalence in each site has been lowered to less than 1% microfilaremia or less than 2% antigenemia, the implementation unit conducts a TAS to determine whether MDA can be stopped. Failure to pass pre-TAS means that further rounds of MDA are required. This study aims to understand factors influencing pre-TAS results using existing programmatic data from 554 implementation units, of which 74 (13%) failed, in 13 countries. Secondary data analysis was completed using existing data from Bangladesh, Benin, Burkina Faso, Cameroon, Ghana, Haiti, Indonesia, Mali, Nepal, Niger, Sierra Leone, Tanzania, and Uganda. Additional covariate data were obtained from spatial raster data sets. Bivariate analysis and multilinear regression were performed to establish potential relationships between variables and the pre-TAS result. Higher baseline prevalence and lower elevation were significant in the regression model. Variables statistically significantly associated with failure (p-value \u22640.05) in the bivariate analyses included baseline prevalence at or above 5% or 10%, use of Filariasis Test Strips (FTS), primary vector of Culex , treatment with diethylcarbamazine-albendazole, higher elevation, higher population density, higher enhanced vegetation index (EVI), higher annual rainfall, and 6 or more rounds of MDA. This paper reports for the first time factors associated with pre-TAS results from a multi-country analysis. This information can help countries more effectively forecast program activities, such as the potential need for more rounds of MDA, and prioritize resources to ensure adequate coverage of all persons in areas at highest risk of failing pre-TAS. Author summary Achieving elimination of lymphatic filariasis (LF) as a public health problem requires a minimum of five rounds of mass drug administration (MDA) and being able to demonstrate low prevalence in several subsequent assessments. LF elimination programs implement sentinel and spot-check site assessments, called pre-TAS, to determine whether districts are eligible to implement more rigorous population-based surveys to determine whether MDA can be stopped or if further rounds are required. Reasons for failing pre-TAS are not well understood and have not previously been examined with data compiled from multiple countries. For this analysis, we analyzed data from routine USAID and WHO reports from Bangladesh, Benin, Burkina Faso, Cameroon, Ghana, Haiti, Indonesia, Mali, Nepal, Niger, Sierra Leone, Tanzania, and Uganda. In a model that included multiple variables, high baseline prevalence and lower elevation were significant. In models comparing only one variable to the outcome, the following were statistically significantly associated with failure: higher baseline prevalence at or above 5% or 10%, use of the FTS, primary vector of Culex , treatment with diethylcarbamazine-albendazole, lower elevation, higher population density, higher Enhanced Vegetation Index, higher annual rainfall, and six or more rounds of mass drug administration. These results can help national programs plan MDA more effectively, e.g., by focusing resources on areas with higher baseline prevalence and/or lower elevation."
+      "orig": "Achieving elimination of lymphatic filariasis (LF) as a public health problem requires a minimum of five effective rounds of mass drug administration (MDA) and demonstrating low prevalence in subsequent assessments. The first assessments recommended by the World Health Organization (WHO) are sentinel and spot-check sites\u2014referred to as pre-transmission assessment surveys (pre-TAS)\u2014in each implementation unit after MDA. If pre-TAS shows that prevalence in each site has been lowered to less than 1% microfilaremia or less than 2% antigenemia, the implementation unit conducts a TAS to determine whether MDA can be stopped. Failure to pass pre-TAS means that further rounds of MDA are required. This study aims to understand factors influencing pre-TAS results using existing programmatic data from 554 implementation units, of which 74 (13%) failed, in 13 countries. Secondary data analysis was completed using existing data from Bangladesh, Benin, Burkina Faso, Cameroon, Ghana, Haiti, Indonesia, Mali, Nepal, Niger, Sierra Leone, Tanzania, and Uganda. Additional covariate data were obtained from spatial raster data sets. Bivariate analysis and multilinear regression were performed to establish potential relationships between variables and the pre-TAS result. Higher baseline prevalence and lower elevation were significant in the regression model. Variables statistically significantly associated with failure (p-value \u22640.05) in the bivariate analyses included baseline prevalence at or above 5% or 10%, use of Filariasis Test Strips (FTS), primary vector ofCulex, treatment with diethylcarbamazine-albendazole, higher elevation, higher population density, higher enhanced vegetation index (EVI), higher annual rainfall, and 6 or more rounds of MDA. This paper reports for the first time factors associated with pre-TAS results from a multi-country analysis. This information can help countries more effectively forecast program activities, such as the potential need for more rounds of MDA, and prioritize resources to ensure adequate coverage of all persons in areas at highest risk of failing pre-TAS.Author summaryAchieving elimination of lymphatic filariasis (LF) as a public health problem requires a minimum of five rounds of mass drug administration (MDA) and being able to demonstrate low prevalence in several subsequent assessments. LF elimination programs implement sentinel and spot-check site assessments, called pre-TAS, to determine whether districts are eligible to implement more rigorous population-based surveys to determine whether MDA can be stopped or if further rounds are required. Reasons for failing pre-TAS are not well understood and have not previously been examined with data compiled from multiple countries. For this analysis, we analyzed data from routine USAID and WHO reports from Bangladesh, Benin, Burkina Faso, Cameroon, Ghana, Haiti, Indonesia, Mali, Nepal, Niger, Sierra Leone, Tanzania, and Uganda. In a model that included multiple variables, high baseline prevalence and lower elevation were significant. In models comparing only one variable to the outcome, the following were statistically significantly associated with failure: higher baseline prevalence at or above 5% or 10%, use of the FTS, primary vector ofCulex, treatment with diethylcarbamazine-albendazole, lower elevation, higher population density, higher Enhanced Vegetation Index, higher annual rainfall, and six or more rounds of mass drug administration. These results can help national programs plan MDA more effectively, e.g., by focusing resources on areas with higher baseline prevalence and/or lower elevation.",
+      "text": "Achieving elimination of lymphatic filariasis (LF) as a public health problem requires a minimum of five effective rounds of mass drug administration (MDA) and demonstrating low prevalence in subsequent assessments. The first assessments recommended by the World Health Organization (WHO) are sentinel and spot-check sites\u2014referred to as pre-transmission assessment surveys (pre-TAS)\u2014in each implementation unit after MDA. If pre-TAS shows that prevalence in each site has been lowered to less than 1% microfilaremia or less than 2% antigenemia, the implementation unit conducts a TAS to determine whether MDA can be stopped. Failure to pass pre-TAS means that further rounds of MDA are required. This study aims to understand factors influencing pre-TAS results using existing programmatic data from 554 implementation units, of which 74 (13%) failed, in 13 countries. Secondary data analysis was completed using existing data from Bangladesh, Benin, Burkina Faso, Cameroon, Ghana, Haiti, Indonesia, Mali, Nepal, Niger, Sierra Leone, Tanzania, and Uganda. Additional covariate data were obtained from spatial raster data sets. Bivariate analysis and multilinear regression were performed to establish potential relationships between variables and the pre-TAS result. Higher baseline prevalence and lower elevation were significant in the regression model. Variables statistically significantly associated with failure (p-value \u22640.05) in the bivariate analyses included baseline prevalence at or above 5% or 10%, use of Filariasis Test Strips (FTS), primary vector ofCulex, treatment with diethylcarbamazine-albendazole, higher elevation, higher population density, higher enhanced vegetation index (EVI), higher annual rainfall, and 6 or more rounds of MDA. This paper reports for the first time factors associated with pre-TAS results from a multi-country analysis. This information can help countries more effectively forecast program activities, such as the potential need for more rounds of MDA, and prioritize resources to ensure adequate coverage of all persons in areas at highest risk of failing pre-TAS.Author summaryAchieving elimination of lymphatic filariasis (LF) as a public health problem requires a minimum of five rounds of mass drug administration (MDA) and being able to demonstrate low prevalence in several subsequent assessments. LF elimination programs implement sentinel and spot-check site assessments, called pre-TAS, to determine whether districts are eligible to implement more rigorous population-based surveys to determine whether MDA can be stopped or if further rounds are required. Reasons for failing pre-TAS are not well understood and have not previously been examined with data compiled from multiple countries. For this analysis, we analyzed data from routine USAID and WHO reports from Bangladesh, Benin, Burkina Faso, Cameroon, Ghana, Haiti, Indonesia, Mali, Nepal, Niger, Sierra Leone, Tanzania, and Uganda. In a model that included multiple variables, high baseline prevalence and lower elevation were significant. In models comparing only one variable to the outcome, the following were statistically significantly associated with failure: higher baseline prevalence at or above 5% or 10%, use of the FTS, primary vector ofCulex, treatment with diethylcarbamazine-albendazole, lower elevation, higher population density, higher Enhanced Vegetation Index, higher annual rainfall, and six or more rounds of mass drug administration. These results can help national programs plan MDA more effectively, e.g., by focusing resources on areas with higher baseline prevalence and/or lower elevation."
     },
     {
       "self_ref": "#/texts/4",
@@ -350,8 +329,8 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "Lymphatic filariasis (LF), a disease caused by parasitic worms transmitted to humans by mosquito bite, manifests in disabling and stigmatizing chronic conditions including lymphedema and hydrocele. To eliminate LF as a public health problem, the World Health Organization (WHO) recommends two strategies: reducing transmission through annual mass drug administration (MDA) and reducing suffering through ensuring the availability of morbidity management and disability prevention services to all patients [ 1 ]. For the first strategy, eliminating LF as a public health problem is defined as a \u2018reduction in measurable prevalence in infection in endemic areas below a target threshold at which further transmission is considered unlikely even in the absence of MDA\u2019 [ 2 ]. As of 2018, 14 countries have eliminated LF as a public health problem while 58 countries remain endemic for LF [ 3 ].",
-      "text": "Lymphatic filariasis (LF), a disease caused by parasitic worms transmitted to humans by mosquito bite, manifests in disabling and stigmatizing chronic conditions including lymphedema and hydrocele. To eliminate LF as a public health problem, the World Health Organization (WHO) recommends two strategies: reducing transmission through annual mass drug administration (MDA) and reducing suffering through ensuring the availability of morbidity management and disability prevention services to all patients [ 1 ]. For the first strategy, eliminating LF as a public health problem is defined as a \u2018reduction in measurable prevalence in infection in endemic areas below a target threshold at which further transmission is considered unlikely even in the absence of MDA\u2019 [ 2 ]. As of 2018, 14 countries have eliminated LF as a public health problem while 58 countries remain endemic for LF [ 3 ]."
+      "orig": "Lymphatic filariasis (LF), a disease caused by parasitic worms transmitted to humans by mosquito bite, manifests in disabling and stigmatizing chronic conditions including lymphedema and hydrocele. To eliminate LF as a public health problem, the World Health Organization (WHO) recommends two strategies: reducing transmission through annual mass drug administration (MDA) and reducing suffering through ensuring the availability of morbidity management and disability prevention services to all patients [1]. For the first strategy, eliminating LF as a public health problem is defined as a \u2018reduction in measurable prevalence in infection in endemic areas below a target threshold at which further transmission is considered unlikely even in the absence of MDA\u2019 [2]. As of 2018, 14 countries have eliminated LF as a public health problem while 58 countries remain endemic for LF [3].",
+      "text": "Lymphatic filariasis (LF), a disease caused by parasitic worms transmitted to humans by mosquito bite, manifests in disabling and stigmatizing chronic conditions including lymphedema and hydrocele. To eliminate LF as a public health problem, the World Health Organization (WHO) recommends two strategies: reducing transmission through annual mass drug administration (MDA) and reducing suffering through ensuring the availability of morbidity management and disability prevention services to all patients [1]. For the first strategy, eliminating LF as a public health problem is defined as a \u2018reduction in measurable prevalence in infection in endemic areas below a target threshold at which further transmission is considered unlikely even in the absence of MDA\u2019 [2]. As of 2018, 14 countries have eliminated LF as a public health problem while 58 countries remain endemic for LF [3]."
     },
     {
       "self_ref": "#/texts/6",
@@ -361,8 +340,8 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "The road to elimination as a public health problem has several milestones. First, where LF prevalence at baseline has exceeded 1% as measured either through microfilaremia (Mf) or antigenemia (Ag), MDA is implemented and treatment coverage is measured in all implementation units, which usually correspond to districts. Implementation units must complete at least five rounds of \u2018effective\u2019 treatment, i.e. treatment with a minimum coverage of 65% of the total population. Then, WHO recommends sentinel and spot-check site assessments\u2014referred to as pre-transmission assessment surveys (pre-TAS)\u2014in each implementation unit to determine whether prevalence in each site is less than 1% Mf or less than 2% Ag [ 4 ]. Next, if these thresholds are met, national programs can progress to the first transmission assessment survey (TAS). The TAS is a population-based cluster or systematic survey of six- and seven-year-old children to assess whether transmission has fallen below the threshold at which infection is believed to persist. TAS is conducted at least three times, with two years between each survey. TAS 1 results determine if it is appropriate to stop MDA or whether further rounds are required. Finally, when TAS 2 and 3 also fall below the set threshold in every endemic implementation unit nationwide and morbidity criteria have been fulfilled, the national program submits a dossier to WHO requesting that elimination be officially validated.",
-      "text": "The road to elimination as a public health problem has several milestones. First, where LF prevalence at baseline has exceeded 1% as measured either through microfilaremia (Mf) or antigenemia (Ag), MDA is implemented and treatment coverage is measured in all implementation units, which usually correspond to districts. Implementation units must complete at least five rounds of \u2018effective\u2019 treatment, i.e. treatment with a minimum coverage of 65% of the total population. Then, WHO recommends sentinel and spot-check site assessments\u2014referred to as pre-transmission assessment surveys (pre-TAS)\u2014in each implementation unit to determine whether prevalence in each site is less than 1% Mf or less than 2% Ag [ 4 ]. Next, if these thresholds are met, national programs can progress to the first transmission assessment survey (TAS). The TAS is a population-based cluster or systematic survey of six- and seven-year-old children to assess whether transmission has fallen below the threshold at which infection is believed to persist. TAS is conducted at least three times, with two years between each survey. TAS 1 results determine if it is appropriate to stop MDA or whether further rounds are required. Finally, when TAS 2 and 3 also fall below the set threshold in every endemic implementation unit nationwide and morbidity criteria have been fulfilled, the national program submits a dossier to WHO requesting that elimination be officially validated."
+      "orig": "The road to elimination as a public health problem has several milestones. First, where LF prevalence at baseline has exceeded 1% as measured either through microfilaremia (Mf) or antigenemia (Ag), MDA is implemented and treatment coverage is measured in all implementation units, which usually correspond to districts. Implementation units must complete at least five rounds of \u2018effective\u2019 treatment, i.e. treatment with a minimum coverage of 65% of the total population. Then, WHO recommends sentinel and spot-check site assessments\u2014referred to as pre-transmission assessment surveys (pre-TAS)\u2014in each implementation unit to determine whether prevalence in each site is less than 1% Mf or less than 2% Ag [4]. Next, if these thresholds are met, national programs can progress to the first transmission assessment survey (TAS). The TAS is a population-based cluster or systematic survey of six- and seven-year-old children to assess whether transmission has fallen below the threshold at which infection is believed to persist. TAS is conducted at least three times, with two years between each survey. TAS 1 results determine if it is appropriate to stop MDA or whether further rounds are required. Finally, when TAS 2 and 3 also fall below the set threshold in every endemic implementation unit nationwide and morbidity criteria have been fulfilled, the national program submits a dossier to WHO requesting that elimination be officially validated.",
+      "text": "The road to elimination as a public health problem has several milestones. First, where LF prevalence at baseline has exceeded 1% as measured either through microfilaremia (Mf) or antigenemia (Ag), MDA is implemented and treatment coverage is measured in all implementation units, which usually correspond to districts. Implementation units must complete at least five rounds of \u2018effective\u2019 treatment, i.e. treatment with a minimum coverage of 65% of the total population. Then, WHO recommends sentinel and spot-check site assessments\u2014referred to as pre-transmission assessment surveys (pre-TAS)\u2014in each implementation unit to determine whether prevalence in each site is less than 1% Mf or less than 2% Ag [4]. Next, if these thresholds are met, national programs can progress to the first transmission assessment survey (TAS). The TAS is a population-based cluster or systematic survey of six- and seven-year-old children to assess whether transmission has fallen below the threshold at which infection is believed to persist. TAS is conducted at least three times, with two years between each survey. TAS 1 results determine if it is appropriate to stop MDA or whether further rounds are required. Finally, when TAS 2 and 3 also fall below the set threshold in every endemic implementation unit nationwide and morbidity criteria have been fulfilled, the national program submits a dossier to WHO requesting that elimination be officially validated."
     },
     {
       "self_ref": "#/texts/7",
@@ -372,8 +351,8 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "Pre-TAS include at least one sentinel and one spot-check site per one million population. Sentinel sites are established at the start of the program in villages where LF prevalence was believed to be relatively high. Spot-check sites are villages not previously tested but purposively selected as potentially high-risk areas due to original high prevalence, low coverage during MDA, high vector density, or other factors [ 4 ]. At least six months after MDA implementation, data are collected from a convenience sample of at least 300 people over five years old in each site. Originally, Mf was recommended as the indicator of choice for pre-TAS, assessed by blood smears taken at the time of peak parasite periodicity [ 4 ]. WHO later recommended the use of circulating filarial antigen rapid diagnostic tests, BinaxNow immunochromatographic card tests (ICTs), and after 2016, Alere Filariasis Test Strips (FTS), because they are more sensitive, easier to implement, and more flexible about time of day that blood can be taken [ 5 ].",
-      "text": "Pre-TAS include at least one sentinel and one spot-check site per one million population. Sentinel sites are established at the start of the program in villages where LF prevalence was believed to be relatively high. Spot-check sites are villages not previously tested but purposively selected as potentially high-risk areas due to original high prevalence, low coverage during MDA, high vector density, or other factors [ 4 ]. At least six months after MDA implementation, data are collected from a convenience sample of at least 300 people over five years old in each site. Originally, Mf was recommended as the indicator of choice for pre-TAS, assessed by blood smears taken at the time of peak parasite periodicity [ 4 ]. WHO later recommended the use of circulating filarial antigen rapid diagnostic tests, BinaxNow immunochromatographic card tests (ICTs), and after 2016, Alere Filariasis Test Strips (FTS), because they are more sensitive, easier to implement, and more flexible about time of day that blood can be taken [ 5 ]."
+      "orig": "Pre-TAS include at least one sentinel and one spot-check site per one million population. Sentinel sites are established at the start of the program in villages where LF prevalence was believed to be relatively high. Spot-check sites are villages not previously tested but purposively selected as potentially high-risk areas due to original high prevalence, low coverage during MDA, high vector density, or other factors [4]. At least six months after MDA implementation, data are collected from a convenience sample of at least 300 people over five years old in each site. Originally, Mf was recommended as the indicator of choice for pre-TAS, assessed by blood smears taken at the time of peak parasite periodicity [4]. WHO later recommended the use of circulating filarial antigen rapid diagnostic tests, BinaxNow immunochromatographic card tests (ICTs), and after 2016, Alere Filariasis Test Strips (FTS), because they are more sensitive, easier to implement, and more flexible about time of day that blood can be taken [5].",
+      "text": "Pre-TAS include at least one sentinel and one spot-check site per one million population. Sentinel sites are established at the start of the program in villages where LF prevalence was believed to be relatively high. Spot-check sites are villages not previously tested but purposively selected as potentially high-risk areas due to original high prevalence, low coverage during MDA, high vector density, or other factors [4]. At least six months after MDA implementation, data are collected from a convenience sample of at least 300 people over five years old in each site. Originally, Mf was recommended as the indicator of choice for pre-TAS, assessed by blood smears taken at the time of peak parasite periodicity [4]. WHO later recommended the use of circulating filarial antigen rapid diagnostic tests, BinaxNow immunochromatographic card tests (ICTs), and after 2016, Alere Filariasis Test Strips (FTS), because they are more sensitive, easier to implement, and more flexible about time of day that blood can be taken [5]."
     },
     {
       "self_ref": "#/texts/8",
@@ -408,6 +387,18 @@
         },
         {
           "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/31"
+        },
+        {
+          "$ref": "#/texts/33"
         }
       ],
       "label": "section_header",
@@ -435,13 +426,13 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "Building on previous work, we delineated five domains of variables that could influence pre-TAS outcomes: prevalence, agent, environment, MDA, and pre-TAS implementation ( Table 1 ) [ 6 \u2013 8 ]. We prioritized key concepts that could be measured through our data or captured through publicly available global geospatial data sets.",
-      "text": "Building on previous work, we delineated five domains of variables that could influence pre-TAS outcomes: prevalence, agent, environment, MDA, and pre-TAS implementation ( Table 1 ) [ 6 \u2013 8 ]. We prioritized key concepts that could be measured through our data or captured through publicly available global geospatial data sets."
+      "orig": "Building on previous work, we delineated five domains of variables that could influence pre-TAS outcomes: prevalence, agent, environment, MDA, and pre-TAS implementation (Table 1) [6\u20138]. We prioritized key concepts that could be measured through our data or captured through publicly available global geospatial data sets.",
+      "text": "Building on previous work, we delineated five domains of variables that could influence pre-TAS outcomes: prevalence, agent, environment, MDA, and pre-TAS implementation (Table 1) [6\u20138]. We prioritized key concepts that could be measured through our data or captured through publicly available global geospatial data sets."
     },
     {
       "self_ref": "#/texts/13",
       "parent": {
-        "$ref": "#/texts/0"
+        "$ref": "#/texts/10"
       },
       "children": [
         {
@@ -462,13 +453,13 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "Information on baseline prevalence, MDA coverage, the number of MDA rounds, and pre-TAS information (month and year of survey, district, site name, and outcome) was gathered through regular reporting for the USAID-funded NTD programs (ENVISION, END in Africa, and END in Asia). These data were augmented by other reporting data such as the country\u2019s dossier data annexes, the WHO Preventive Chemotherapy and Transmission Control Databank, and WHO reporting forms. Data were then reviewed by country experts, including the Ministry of Health program staff and implementing program staff, and updated as necessary. Data on vectors were also obtained from country experts. The district geographic boundaries were matched to geospatial shapefiles from the ENVISION project geospatial data repository, while other geospatial data were obtained through publicly available sources ( Table 1 ).",
-      "text": "Information on baseline prevalence, MDA coverage, the number of MDA rounds, and pre-TAS information (month and year of survey, district, site name, and outcome) was gathered through regular reporting for the USAID-funded NTD programs (ENVISION, END in Africa, and END in Asia). These data were augmented by other reporting data such as the country\u2019s dossier data annexes, the WHO Preventive Chemotherapy and Transmission Control Databank, and WHO reporting forms. Data were then reviewed by country experts, including the Ministry of Health program staff and implementing program staff, and updated as necessary. Data on vectors were also obtained from country experts. The district geographic boundaries were matched to geospatial shapefiles from the ENVISION project geospatial data repository, while other geospatial data were obtained through publicly available sources ( Table 1 )."
+      "orig": "Information on baseline prevalence, MDA coverage, the number of MDA rounds, and pre-TAS information (month and year of survey, district, site name, and outcome) was gathered through regular reporting for the USAID-funded NTD programs (ENVISION, END in Africa, and END in Asia). These data were augmented by other reporting data such as the country\u2019s dossier data annexes, the WHO Preventive Chemotherapy and Transmission Control Databank, and WHO reporting forms. Data were then reviewed by country experts, including the Ministry of Health program staff and implementing program staff, and updated as necessary. Data on vectors were also obtained from country experts. The district geographic boundaries were matched to geospatial shapefiles from the ENVISION project geospatial data repository, while other geospatial data were obtained through publicly available sources (Table 1).",
+      "text": "Information on baseline prevalence, MDA coverage, the number of MDA rounds, and pre-TAS information (month and year of survey, district, site name, and outcome) was gathered through regular reporting for the USAID-funded NTD programs (ENVISION, END in Africa, and END in Asia). These data were augmented by other reporting data such as the country\u2019s dossier data annexes, the WHO Preventive Chemotherapy and Transmission Control Databank, and WHO reporting forms. Data were then reviewed by country experts, including the Ministry of Health program staff and implementing program staff, and updated as necessary. Data on vectors were also obtained from country experts. The district geographic boundaries were matched to geospatial shapefiles from the ENVISION project geospatial data repository, while other geospatial data were obtained through publicly available sources (Table 1)."
     },
     {
       "self_ref": "#/texts/15",
       "parent": {
-        "$ref": "#/texts/0"
+        "$ref": "#/texts/10"
       },
       "children": [
         {
@@ -476,6 +467,21 @@
         },
         {
           "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/29"
         }
       ],
       "label": "section_header",
@@ -492,8 +498,8 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "The outcome of interest for this analysis was whether a district passed or failed the pre-TAS. Failure was defined as any district that had at least one sentinel or spot-check site with a prevalence higher than or equal to 1% Mf or 2% Ag [ 4 ].",
-      "text": "The outcome of interest for this analysis was whether a district passed or failed the pre-TAS. Failure was defined as any district that had at least one sentinel or spot-check site with a prevalence higher than or equal to 1% Mf or 2% Ag [ 4 ]."
+      "orig": "The outcome of interest for this analysis was whether a district passed or failed the pre-TAS. Failure was defined as any district that had at least one sentinel or spot-check site with a prevalence higher than or equal to 1% Mf or 2% Ag [4].",
+      "text": "The outcome of interest for this analysis was whether a district passed or failed the pre-TAS. Failure was defined as any district that had at least one sentinel or spot-check site with a prevalence higher than or equal to 1% Mf or 2% Ag [4]."
     },
     {
       "self_ref": "#/texts/17",
@@ -503,13 +509,13 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "Potential covariates were derived from the available data for each factor in the domain groups listed in  Table 1 . New dichotomous variables were created for all variables that had multiple categories or were continuous for ease of interpretation in models and use in program decision-making. Cut-points for continuous variables were derived from either  a priori  knowledge or through exploratory analysis considering the mean or median value of the dataset, looking to create two groups of similar size with logical cut-points (e.g. rounding numbers to whole numbers). All the variables derived from publicly available global spatial raster datasets were summarized to the district level in ArcGIS Pro using the \u201czonal statistics\u201d tool. The final output used the continuous value measuring the mean pixel value for the district for all variables except geographic area. Categories for each variable were determined by selecting the mean or median dataset value or cut-off used in other relevant literature [ 7 ]. The following section describes the variables that were included in the final analysis and the final categorizations used.",
-      "text": "Potential covariates were derived from the available data for each factor in the domain groups listed in  Table 1 . New dichotomous variables were created for all variables that had multiple categories or were continuous for ease of interpretation in models and use in program decision-making. Cut-points for continuous variables were derived from either  a priori  knowledge or through exploratory analysis considering the mean or median value of the dataset, looking to create two groups of similar size with logical cut-points (e.g. rounding numbers to whole numbers). All the variables derived from publicly available global spatial raster datasets were summarized to the district level in ArcGIS Pro using the \u201czonal statistics\u201d tool. The final output used the continuous value measuring the mean pixel value for the district for all variables except geographic area. Categories for each variable were determined by selecting the mean or median dataset value or cut-off used in other relevant literature [ 7 ]. The following section describes the variables that were included in the final analysis and the final categorizations used."
+      "orig": "Potential covariates were derived from the available data for each factor in the domain groups listed in Table 1. New dichotomous variables were created for all variables that had multiple categories or were continuous for ease of interpretation in models and use in program decision-making. Cut-points for continuous variables were derived from either a priori knowledge or through exploratory analysis considering the mean or median value of the dataset, looking to create two groups of similar size with logical cut-points (e.g. rounding numbers to whole numbers). All the variables derived from publicly available global spatial raster datasets were summarized to the district level in ArcGIS Pro using the \u201czonal statistics\u201d tool. The final output used the continuous value measuring the mean pixel value for the district for all variables except geographic area. Categories for each variable were determined by selecting the mean or median dataset value or cut-off used in other relevant literature [7]. The following section describes the variables that were included in the final analysis and the final categorizations used.",
+      "text": "Potential covariates were derived from the available data for each factor in the domain groups listed in Table 1. New dichotomous variables were created for all variables that had multiple categories or were continuous for ease of interpretation in models and use in program decision-making. Cut-points for continuous variables were derived from either a priori knowledge or through exploratory analysis considering the mean or median value of the dataset, looking to create two groups of similar size with logical cut-points (e.g. rounding numbers to whole numbers). All the variables derived from publicly available global spatial raster datasets were summarized to the district level in ArcGIS Pro using the \u201czonal statistics\u201d tool. The final output used the continuous value measuring the mean pixel value for the district for all variables except geographic area. Categories for each variable were determined by selecting the mean or median dataset value or cut-off used in other relevant literature [7]. The following section describes the variables that were included in the final analysis and the final categorizations used."
     },
     {
       "self_ref": "#/texts/18",
       "parent": {
-        "$ref": "#/texts/0"
+        "$ref": "#/texts/15"
       },
       "children": [
         {
@@ -530,13 +536,13 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "Baseline prevalence can be assumed as a proxy for local transmission conditions [ 14 ] and correlates with prevalence after MDA [ 14 \u2013 20 ]. Baseline prevalence for each district was measured by either blood smears to measure Mf or rapid diagnostic tests to measure Ag. Other studies have modeled Mf and Ag prevalence separately, due to lack of a standardized correlation between the two, especially at pre-MDA levels [ 21 , 22 ]. However, because WHO mapping guidance states that MDA is required if either Mf or Ag is \u22651% and there were not enough data to model each separately, we combined baseline prevalence values regardless of diagnostic test used. We created two variables for use in the analysis (1) using the cut-off of <5% or \u22655% (dataset median value of 5%) and (2) using the cut-off of <10% or \u226510%.",
-      "text": "Baseline prevalence can be assumed as a proxy for local transmission conditions [ 14 ] and correlates with prevalence after MDA [ 14 \u2013 20 ]. Baseline prevalence for each district was measured by either blood smears to measure Mf or rapid diagnostic tests to measure Ag. Other studies have modeled Mf and Ag prevalence separately, due to lack of a standardized correlation between the two, especially at pre-MDA levels [ 21 , 22 ]. However, because WHO mapping guidance states that MDA is required if either Mf or Ag is \u22651% and there were not enough data to model each separately, we combined baseline prevalence values regardless of diagnostic test used. We created two variables for use in the analysis (1) using the cut-off of <5% or \u22655% (dataset median value of 5%) and (2) using the cut-off of <10% or \u226510%."
+      "orig": "Baseline prevalence can be assumed as a proxy for local transmission conditions [14] and correlates with prevalence after MDA [14\u201320]. Baseline prevalence for each district was measured by either blood smears to measure Mf or rapid diagnostic tests to measure Ag. Other studies have modeled Mf and Ag prevalence separately, due to lack of a standardized correlation between the two, especially at pre-MDA levels [21,22]. However, because WHO mapping guidance states that MDA is required if either Mf or Ag is \u22651% and there were not enough data to model each separately, we combined baseline prevalence values regardless of diagnostic test used. We created two variables for use in the analysis (1) using the cut-off of <5% or \u22655% (dataset median value of 5%) and (2) using the cut-off of <10% or \u226510%.",
+      "text": "Baseline prevalence can be assumed as a proxy for local transmission conditions [14] and correlates with prevalence after MDA [14\u201320]. Baseline prevalence for each district was measured by either blood smears to measure Mf or rapid diagnostic tests to measure Ag. Other studies have modeled Mf and Ag prevalence separately, due to lack of a standardized correlation between the two, especially at pre-MDA levels [21,22]. However, because WHO mapping guidance states that MDA is required if either Mf or Ag is \u22651% and there were not enough data to model each separately, we combined baseline prevalence values regardless of diagnostic test used. We created two variables for use in the analysis (1) using the cut-off of <5% or \u22655% (dataset median value of 5%) and (2) using the cut-off of <10% or \u226510%."
     },
     {
       "self_ref": "#/texts/20",
       "parent": {
-        "$ref": "#/texts/0"
+        "$ref": "#/texts/15"
       },
       "children": [
         {
@@ -557,13 +563,13 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "In terms of differences in transmission dynamics by agent, research has shown that  Brugia  spp. are more susceptible to the anti-filarial drug regimens than  Wuchereria bancrofti  parasites [ 23 ]. Thus, we combined districts reporting  B .  malayi  and  B .  timori  and compared them to areas with  W .  bancrofti  or mixed parasites. Two variables from other domains were identified in exploratory analyses to be highly colinear with the parasite, and thus we considered them in the same group of variables for the final regression models. These were variables delineating vectors ( Anopheles  or  Mansonia  compared to  Culex ) from the environmental domain and drug package [ivermectin-albendazole (IVM-ALB) compared to diethylcarbamazine-albendazole (DEC-ALB)] from the MDA domain.",
-      "text": "In terms of differences in transmission dynamics by agent, research has shown that  Brugia  spp. are more susceptible to the anti-filarial drug regimens than  Wuchereria bancrofti  parasites [ 23 ]. Thus, we combined districts reporting  B .  malayi  and  B .  timori  and compared them to areas with  W .  bancrofti  or mixed parasites. Two variables from other domains were identified in exploratory analyses to be highly colinear with the parasite, and thus we considered them in the same group of variables for the final regression models. These were variables delineating vectors ( Anopheles  or  Mansonia  compared to  Culex ) from the environmental domain and drug package [ivermectin-albendazole (IVM-ALB) compared to diethylcarbamazine-albendazole (DEC-ALB)] from the MDA domain."
+      "orig": "In terms of differences in transmission dynamics by agent, research has shown that Brugia spp. are more susceptible to the anti-filarial drug regimens than Wuchereria bancrofti parasites [23]. Thus, we combined districts reporting B. malayi and B. timori and compared them to areas with W. bancrofti or mixed parasites. Two variables from other domains were identified in exploratory analyses to be highly colinear with the parasite, and thus we considered them in the same group of variables for the final regression models. These were variables delineating vectors (Anopheles or Mansonia compared to Culex) from the environmental domain and drug package [ivermectin-albendazole (IVM-ALB) compared to diethylcarbamazine-albendazole (DEC-ALB)] from the MDA domain.",
+      "text": "In terms of differences in transmission dynamics by agent, research has shown that Brugia spp. are more susceptible to the anti-filarial drug regimens than Wuchereria bancrofti parasites [23]. Thus, we combined districts reporting B. malayi and B. timori and compared them to areas with W. bancrofti or mixed parasites. Two variables from other domains were identified in exploratory analyses to be highly colinear with the parasite, and thus we considered them in the same group of variables for the final regression models. These were variables delineating vectors (Anopheles or Mansonia compared to Culex) from the environmental domain and drug package [ivermectin-albendazole (IVM-ALB) compared to diethylcarbamazine-albendazole (DEC-ALB)] from the MDA domain."
     },
     {
       "self_ref": "#/texts/22",
       "parent": {
-        "$ref": "#/texts/0"
+        "$ref": "#/texts/15"
       },
       "children": [
         {
@@ -590,8 +596,8 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "LF transmission intensity is influenced by differing vector transmission dynamics, including vector biting rates and competence, and the number of individuals with microfilaria [ 21 , 24 , 25 ]. Since vector data are not always available, previous studies have explored whether environmental variables associated with vector density, such as elevation, rainfall, and temperature, can be used to predict LF prevalence [ 8 , 21 , 26 \u2013 31 ]. We included the district area and elevation in meters as geographic variables potentially associated with transmission intensity. In addition, within the climate factor, we included Enhanced Vegetation Index (EVI) and rainfall variables. EVI measures vegetation levels, or \u201cgreenness,\u201d where a higher index value indicates a higher level of \u201cgreenness.\u201d",
-      "text": "LF transmission intensity is influenced by differing vector transmission dynamics, including vector biting rates and competence, and the number of individuals with microfilaria [ 21 , 24 , 25 ]. Since vector data are not always available, previous studies have explored whether environmental variables associated with vector density, such as elevation, rainfall, and temperature, can be used to predict LF prevalence [ 8 , 21 , 26 \u2013 31 ]. We included the district area and elevation in meters as geographic variables potentially associated with transmission intensity. In addition, within the climate factor, we included Enhanced Vegetation Index (EVI) and rainfall variables. EVI measures vegetation levels, or \u201cgreenness,\u201d where a higher index value indicates a higher level of \u201cgreenness.\u201d"
+      "orig": "LF transmission intensity is influenced by differing vector transmission dynamics, including vector biting rates and competence, and the number of individuals with microfilaria [21,24,25]. Since vector data are not always available, previous studies have explored whether environmental variables associated with vector density, such as elevation, rainfall, and temperature, can be used to predict LF prevalence [8,21,26\u201331]. We included the district area and elevation in meters as geographic variables potentially associated with transmission intensity. In addition, within the climate factor, we included Enhanced Vegetation Index (EVI) and rainfall variables. EVI measures vegetation levels, or \u201cgreenness,\u201d where a higher index value indicates a higher level of \u201cgreenness.\u201d",
+      "text": "LF transmission intensity is influenced by differing vector transmission dynamics, including vector biting rates and competence, and the number of individuals with microfilaria [21,24,25]. Since vector data are not always available, previous studies have explored whether environmental variables associated with vector density, such as elevation, rainfall, and temperature, can be used to predict LF prevalence [8,21,26\u201331]. We included the district area and elevation in meters as geographic variables potentially associated with transmission intensity. In addition, within the climate factor, we included Enhanced Vegetation Index (EVI) and rainfall variables. EVI measures vegetation levels, or \u201cgreenness,\u201d where a higher index value indicates a higher level of \u201cgreenness.\u201d"
     },
     {
       "self_ref": "#/texts/24",
@@ -601,8 +607,8 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "We included the socio-economic variable of population density, as it has been positively associated with LF prevalence in some studies [ 8 , 27 , 29 ], but no significant association has been found in others [ 30 ]. Population density could be correlated with vector, as in eastern African countries LF is mostly transmitted by  Culex  in urban areas and by  Anopheles  in rural areas [ 32 ]. Additionally, inclusion of the satellite imagery of nighttime lights data is another a proxy for socio-economic status [ 33 ].",
-      "text": "We included the socio-economic variable of population density, as it has been positively associated with LF prevalence in some studies [ 8 , 27 , 29 ], but no significant association has been found in others [ 30 ]. Population density could be correlated with vector, as in eastern African countries LF is mostly transmitted by  Culex  in urban areas and by  Anopheles  in rural areas [ 32 ]. Additionally, inclusion of the satellite imagery of nighttime lights data is another a proxy for socio-economic status [ 33 ]."
+      "orig": "We included the socio-economic variable of population density, as it has been positively associated with LF prevalence in some studies [8,27,29], but no significant association has been found in others [30]. Population density could be correlated with vector, as in eastern African countries LF is mostly transmitted by Culex in urban areas and by Anopheles in rural areas [32]. Additionally, inclusion of the satellite imagery of nighttime lights data is another a proxy for socio-economic status [33].",
+      "text": "We included the socio-economic variable of population density, as it has been positively associated with LF prevalence in some studies [8,27,29], but no significant association has been found in others [30]. Population density could be correlated with vector, as in eastern African countries LF is mostly transmitted by Culex in urban areas and by Anopheles in rural areas [32]. Additionally, inclusion of the satellite imagery of nighttime lights data is another a proxy for socio-economic status [33]."
     },
     {
       "self_ref": "#/texts/25",
@@ -612,13 +618,13 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "Finally, all or parts of districts that are co-endemic with onchocerciasis may have received multiple rounds of MDA with ivermectin before LF MDA started, which may have lowered LF prevalence in an area [ 34 \u2013 36 ]. Thus, we included a categorical variable to distinguish if districts were co-endemic with onchocerciasis.",
-      "text": "Finally, all or parts of districts that are co-endemic with onchocerciasis may have received multiple rounds of MDA with ivermectin before LF MDA started, which may have lowered LF prevalence in an area [ 34 \u2013 36 ]. Thus, we included a categorical variable to distinguish if districts were co-endemic with onchocerciasis."
+      "orig": "Finally, all or parts of districts that are co-endemic with onchocerciasis may have received multiple rounds of MDA with ivermectin before LF MDA started, which may have lowered LF prevalence in an area [34\u201336]. Thus, we included a categorical variable to distinguish if districts were co-endemic with onchocerciasis.",
+      "text": "Finally, all or parts of districts that are co-endemic with onchocerciasis may have received multiple rounds of MDA with ivermectin before LF MDA started, which may have lowered LF prevalence in an area [34\u201336]. Thus, we included a categorical variable to distinguish if districts were co-endemic with onchocerciasis."
     },
     {
       "self_ref": "#/texts/26",
       "parent": {
-        "$ref": "#/texts/0"
+        "$ref": "#/texts/15"
       },
       "children": [
         {
@@ -642,8 +648,8 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "Treatment effectiveness depends upon both drug efficacy (ability to kill adult worms, ability to kill Mf, drug resistance, drug quality) and implementation of MDA (coverage, compliance, number of rounds) [ 14 , 16 ]. Ivermectin is less effective against adult worms than DEC, and therefore it is likely that Ag reduction is slower in areas using ivermectin instead of DEC in MDA [ 37 ]. Models also have shown that MDA coverage affects prevalence, although coverage has been defined in various ways, such as median coverage, number of rounds, or individual compliance [ 14 \u2013 16 , 20 , 38 \u2013 40 ]. Furthermore, systematic non-compliance, or population sub-groups which consistently refuse to take medicines, has been shown to represent a threat to elimination [ 41 , 42 ].",
-      "text": "Treatment effectiveness depends upon both drug efficacy (ability to kill adult worms, ability to kill Mf, drug resistance, drug quality) and implementation of MDA (coverage, compliance, number of rounds) [ 14 , 16 ]. Ivermectin is less effective against adult worms than DEC, and therefore it is likely that Ag reduction is slower in areas using ivermectin instead of DEC in MDA [ 37 ]. Models also have shown that MDA coverage affects prevalence, although coverage has been defined in various ways, such as median coverage, number of rounds, or individual compliance [ 14 \u2013 16 , 20 , 38 \u2013 40 ]. Furthermore, systematic non-compliance, or population sub-groups which consistently refuse to take medicines, has been shown to represent a threat to elimination [ 41 , 42 ]."
+      "orig": "Treatment effectiveness depends upon both drug efficacy (ability to kill adult worms, ability to kill Mf, drug resistance, drug quality) and implementation of MDA (coverage, compliance, number of rounds) [14,16]. Ivermectin is less effective against adult worms than DEC, and therefore it is likely that Ag reduction is slower in areas using ivermectin instead of DEC in MDA [37]. Models also have shown that MDA coverage affects prevalence, although coverage has been defined in various ways, such as median coverage, number of rounds, or individual compliance [14\u201316,20,38\u201340]. Furthermore, systematic non-compliance, or population sub-groups which consistently refuse to take medicines, has been shown to represent a threat to elimination [41,42].",
+      "text": "Treatment effectiveness depends upon both drug efficacy (ability to kill adult worms, ability to kill Mf, drug resistance, drug quality) and implementation of MDA (coverage, compliance, number of rounds) [14,16]. Ivermectin is less effective against adult worms than DEC, and therefore it is likely that Ag reduction is slower in areas using ivermectin instead of DEC in MDA [37]. Models also have shown that MDA coverage affects prevalence, although coverage has been defined in various ways, such as median coverage, number of rounds, or individual compliance [14\u201316,20,38\u201340]. Furthermore, systematic non-compliance, or population sub-groups which consistently refuse to take medicines, has been shown to represent a threat to elimination [41,42]."
     },
     {
       "self_ref": "#/texts/28",
@@ -659,7 +665,7 @@
     {
       "self_ref": "#/texts/29",
       "parent": {
-        "$ref": "#/texts/0"
+        "$ref": "#/texts/15"
       },
       "children": [
         {
@@ -686,7 +692,7 @@
     {
       "self_ref": "#/texts/31",
       "parent": {
-        "$ref": "#/texts/0"
+        "$ref": "#/texts/10"
       },
       "children": [
         {
@@ -713,7 +719,7 @@
     {
       "self_ref": "#/texts/33",
       "parent": {
-        "$ref": "#/texts/0"
+        "$ref": "#/texts/10"
       },
       "children": [
         {
@@ -748,8 +754,8 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "Sensitivity analysis was performed for the final log-binomial model to test for the validity of results under different parameters by excluding some sub-sets of districts from the dataset and rerunning the model. This analysis was done to understand the robustness of the model when (1) excluding all districts in Cameroon, (2) including only districts in Africa, (3) including only districts with  W .  bancrofti  parasite, and (4) including only districts with  Anopheles  as the primary vector. The sensitivity analysis excluding Cameroon was done for two reasons. First, Cameroon had the most pre-TAS results included, but no failures. Second, 70% of the Cameroon districts included in the analysis are co-endemic for loiasis. Given that diagnostic tests used in LF mapping have since been shown to cross-react with loiasis, there is some concern that these districts might not have been truly LF-endemic [ 43 , 44 ].",
-      "text": "Sensitivity analysis was performed for the final log-binomial model to test for the validity of results under different parameters by excluding some sub-sets of districts from the dataset and rerunning the model. This analysis was done to understand the robustness of the model when (1) excluding all districts in Cameroon, (2) including only districts in Africa, (3) including only districts with  W .  bancrofti  parasite, and (4) including only districts with  Anopheles  as the primary vector. The sensitivity analysis excluding Cameroon was done for two reasons. First, Cameroon had the most pre-TAS results included, but no failures. Second, 70% of the Cameroon districts included in the analysis are co-endemic for loiasis. Given that diagnostic tests used in LF mapping have since been shown to cross-react with loiasis, there is some concern that these districts might not have been truly LF-endemic [ 43 , 44 ]."
+      "orig": "Sensitivity analysis was performed for the final log-binomial model to test for the validity of results under different parameters by excluding some sub-sets of districts from the dataset and rerunning the model. This analysis was done to understand the robustness of the model when (1) excluding all districts in Cameroon, (2) including only districts in Africa, (3) including only districts with W. bancrofti parasite, and (4) including only districts with Anopheles as the primary vector. The sensitivity analysis excluding Cameroon was done for two reasons. First, Cameroon had the most pre-TAS results included, but no failures. Second, 70% of the Cameroon districts included in the analysis are co-endemic for loiasis. Given that diagnostic tests used in LF mapping have since been shown to cross-react with loiasis, there is some concern that these districts might not have been truly LF-endemic [43,44].",
+      "text": "Sensitivity analysis was performed for the final log-binomial model to test for the validity of results under different parameters by excluding some sub-sets of districts from the dataset and rerunning the model. This analysis was done to understand the robustness of the model when (1) excluding all districts in Cameroon, (2) including only districts in Africa, (3) including only districts with W. bancrofti parasite, and (4) including only districts with Anopheles as the primary vector. The sensitivity analysis excluding Cameroon was done for two reasons. First, Cameroon had the most pre-TAS results included, but no failures. Second, 70% of the Cameroon districts included in the analysis are co-endemic for loiasis. Given that diagnostic tests used in LF mapping have since been shown to cross-react with loiasis, there is some concern that these districts might not have been truly LF-endemic [43,44]."
     },
     {
       "self_ref": "#/texts/36",
@@ -790,8 +796,8 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "The overall pre-TAS pass rate for the districts included in this analysis was 87% (74 failures in 554 districts). Nearly 40% of the 554 districts were from Cameroon (134) and Tanzania (87) ( Fig 1 ). No districts in Bangladesh, Cameroon, Mali, or Uganda failed a pre-TAS in this data set; over 25% of districts in Burkina Faso, Ghana, Haiti, Nepal, and Sierra Leone failed pre-TAS in this data set. Baseline prevalence varied widely within and between the 13 countries.  Fig 2  shows the highest, lowest, and median baseline prevalence in the study districts by country. Burkina Faso had the highest median baseline prevalence at 52% and Burkina Faso, Tanzania, and Ghana all had at least one district with a very high baseline of over 70%. In Mali, Indonesia, Benin, and Bangladesh, all districts had baseline prevalences below 20%.",
-      "text": "The overall pre-TAS pass rate for the districts included in this analysis was 87% (74 failures in 554 districts). Nearly 40% of the 554 districts were from Cameroon (134) and Tanzania (87) ( Fig 1 ). No districts in Bangladesh, Cameroon, Mali, or Uganda failed a pre-TAS in this data set; over 25% of districts in Burkina Faso, Ghana, Haiti, Nepal, and Sierra Leone failed pre-TAS in this data set. Baseline prevalence varied widely within and between the 13 countries.  Fig 2  shows the highest, lowest, and median baseline prevalence in the study districts by country. Burkina Faso had the highest median baseline prevalence at 52% and Burkina Faso, Tanzania, and Ghana all had at least one district with a very high baseline of over 70%. In Mali, Indonesia, Benin, and Bangladesh, all districts had baseline prevalences below 20%."
+      "orig": "The overall pre-TAS pass rate for the districts included in this analysis was 87% (74 failures in 554 districts). Nearly 40% of the 554 districts were from Cameroon (134) and Tanzania (87) (Fig 1). No districts in Bangladesh, Cameroon, Mali, or Uganda failed a pre-TAS in this data set; over 25% of districts in Burkina Faso, Ghana, Haiti, Nepal, and Sierra Leone failed pre-TAS in this data set. Baseline prevalence varied widely within and between the 13 countries. Fig 2 shows the highest, lowest, and median baseline prevalence in the study districts by country. Burkina Faso had the highest median baseline prevalence at 52% and Burkina Faso, Tanzania, and Ghana all had at least one district with a very high baseline of over 70%. In Mali, Indonesia, Benin, and Bangladesh, all districts had baseline prevalences below 20%.",
+      "text": "The overall pre-TAS pass rate for the districts included in this analysis was 87% (74 failures in 554 districts). Nearly 40% of the 554 districts were from Cameroon (134) and Tanzania (87) (Fig 1). No districts in Bangladesh, Cameroon, Mali, or Uganda failed a pre-TAS in this data set; over 25% of districts in Burkina Faso, Ghana, Haiti, Nepal, and Sierra Leone failed pre-TAS in this data set. Baseline prevalence varied widely within and between the 13 countries. Fig 2 shows the highest, lowest, and median baseline prevalence in the study districts by country. Burkina Faso had the highest median baseline prevalence at 52% and Burkina Faso, Tanzania, and Ghana all had at least one district with a very high baseline of over 70%. In Mali, Indonesia, Benin, and Bangladesh, all districts had baseline prevalences below 20%."
     },
     {
       "self_ref": "#/texts/38",
@@ -801,8 +807,8 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "Fig 3  shows the unadjusted analysis for key variables by pre-TAS result. Variables statistically significantly associated with failure (p-value \u22640.05) included higher baseline prevalence at or above 5% or 10%, FTS diagnostic test, primary vector of  Culex , treatment with DEC-ALB, higher elevation, higher population density, higher EVI, higher annual rainfall, and six or more rounds of MDA. Variables that were not significantly associated with pre-TAS failure included diagnostic method used (Ag or Mf), parasite, co-endemicity for onchocerciasis, median MDA coverage, and sufficient rounds of MDA.",
-      "text": "Fig 3  shows the unadjusted analysis for key variables by pre-TAS result. Variables statistically significantly associated with failure (p-value \u22640.05) included higher baseline prevalence at or above 5% or 10%, FTS diagnostic test, primary vector of  Culex , treatment with DEC-ALB, higher elevation, higher population density, higher EVI, higher annual rainfall, and six or more rounds of MDA. Variables that were not significantly associated with pre-TAS failure included diagnostic method used (Ag or Mf), parasite, co-endemicity for onchocerciasis, median MDA coverage, and sufficient rounds of MDA."
+      "orig": "Fig 3 shows the unadjusted analysis for key variables by pre-TAS result. Variables statistically significantly associated with failure (p-value \u22640.05) included higher baseline prevalence at or above 5% or 10%, FTS diagnostic test, primary vector of Culex, treatment with DEC-ALB, higher elevation, higher population density, higher EVI, higher annual rainfall, and six or more rounds of MDA. Variables that were not significantly associated with pre-TAS failure included diagnostic method used (Ag or Mf), parasite, co-endemicity for onchocerciasis, median MDA coverage, and sufficient rounds of MDA.",
+      "text": "Fig 3 shows the unadjusted analysis for key variables by pre-TAS result. Variables statistically significantly associated with failure (p-value \u22640.05) included higher baseline prevalence at or above 5% or 10%, FTS diagnostic test, primary vector of Culex, treatment with DEC-ALB, higher elevation, higher population density, higher EVI, higher annual rainfall, and six or more rounds of MDA. Variables that were not significantly associated with pre-TAS failure included diagnostic method used (Ag or Mf), parasite, co-endemicity for onchocerciasis, median MDA coverage, and sufficient rounds of MDA."
     },
     {
       "self_ref": "#/texts/39",
@@ -823,8 +829,8 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "Fig 4  shows the risk ratio results with their corresponding confidence intervals. In a model with interaction between baseline and diagnostic test the baseline parameter was significant while diagnostic test and the interaction term were not. Districts with high baseline had a statistically significant (p-value \u22640.05) 2.52 times higher risk of failure (95% CI 1.37\u20134.64) compared to those with low baseline prevalence. The FTS diagnostic test or ICT diagnostic test alone were not significant nor was the interaction term. Additionally, districts with an elevation below 350 meters had a statistically significant (p-value \u22640.05) 3.07 times higher risk of failing pre-TAS (95% CI 1.95\u20134.83).",
-      "text": "Fig 4  shows the risk ratio results with their corresponding confidence intervals. In a model with interaction between baseline and diagnostic test the baseline parameter was significant while diagnostic test and the interaction term were not. Districts with high baseline had a statistically significant (p-value \u22640.05) 2.52 times higher risk of failure (95% CI 1.37\u20134.64) compared to those with low baseline prevalence. The FTS diagnostic test or ICT diagnostic test alone were not significant nor was the interaction term. Additionally, districts with an elevation below 350 meters had a statistically significant (p-value \u22640.05) 3.07 times higher risk of failing pre-TAS (95% CI 1.95\u20134.83)."
+      "orig": "Fig 4 shows the risk ratio results with their corresponding confidence intervals. In a model with interaction between baseline and diagnostic test the baseline parameter was significant while diagnostic test and the interaction term were not. Districts with high baseline had a statistically significant (p-value \u22640.05) 2.52 times higher risk of failure (95% CI 1.37\u20134.64) compared to those with low baseline prevalence. The FTS diagnostic test or ICT diagnostic test alone were not significant nor was the interaction term. Additionally, districts with an elevation below 350 meters had a statistically significant (p-value \u22640.05) 3.07 times higher risk of failing pre-TAS (95% CI 1.95\u20134.83).",
+      "text": "Fig 4 shows the risk ratio results with their corresponding confidence intervals. In a model with interaction between baseline and diagnostic test the baseline parameter was significant while diagnostic test and the interaction term were not. Districts with high baseline had a statistically significant (p-value \u22640.05) 2.52 times higher risk of failure (95% CI 1.37\u20134.64) compared to those with low baseline prevalence. The FTS diagnostic test or ICT diagnostic test alone were not significant nor was the interaction term. Additionally, districts with an elevation below 350 meters had a statistically significant (p-value \u22640.05) 3.07 times higher risk of failing pre-TAS (95% CI 1.95\u20134.83)."
     },
     {
       "self_ref": "#/texts/41",
@@ -834,8 +840,8 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "Sensitivity analyses were conducted using the same model with different subsets of the dataset including (1) all districts except for districts in Cameroon (134 total with no failures), (2) only districts in Africa, (3) only districts with  W .  bancrofti , and (4) only districts with  Anopheles  as primary vector. The results of the sensitivity models ( Table 2 ) indicate an overall robust model. High baseline and lower elevation remained significant across all the models. The ICT diagnostic test used remains insignificant across all models. The FTS diagnostic test was positively significant in model 1 and negatively significant in model 4. The interaction term of baseline prevalence and FTS diagnostic test was significant in three models though the estimate was unstable in the  W .  bancrofti -only and  Anopheles -only models (models 3 and 4 respectively), as signified by large confidence intervals.",
-      "text": "Sensitivity analyses were conducted using the same model with different subsets of the dataset including (1) all districts except for districts in Cameroon (134 total with no failures), (2) only districts in Africa, (3) only districts with  W .  bancrofti , and (4) only districts with  Anopheles  as primary vector. The results of the sensitivity models ( Table 2 ) indicate an overall robust model. High baseline and lower elevation remained significant across all the models. The ICT diagnostic test used remains insignificant across all models. The FTS diagnostic test was positively significant in model 1 and negatively significant in model 4. The interaction term of baseline prevalence and FTS diagnostic test was significant in three models though the estimate was unstable in the  W .  bancrofti -only and  Anopheles -only models (models 3 and 4 respectively), as signified by large confidence intervals."
+      "orig": "Sensitivity analyses were conducted using the same model with different subsets of the dataset including (1) all districts except for districts in Cameroon (134 total with no failures), (2) only districts in Africa, (3) only districts with W. bancrofti, and (4) only districts with Anopheles as primary vector. The results of the sensitivity models (Table 2) indicate an overall robust model. High baseline and lower elevation remained significant across all the models. The ICT diagnostic test used remains insignificant across all models. The FTS diagnostic test was positively significant in model 1 and negatively significant in model 4. The interaction term of baseline prevalence and FTS diagnostic test was significant in three models though the estimate was unstable in the W. bancrofti-only and Anopheles-only models (models 3 and 4 respectively), as signified by large confidence intervals.",
+      "text": "Sensitivity analyses were conducted using the same model with different subsets of the dataset including (1) all districts except for districts in Cameroon (134 total with no failures), (2) only districts in Africa, (3) only districts with W. bancrofti, and (4) only districts with Anopheles as primary vector. The results of the sensitivity models (Table 2) indicate an overall robust model. High baseline and lower elevation remained significant across all the models. The ICT diagnostic test used remains insignificant across all models. The FTS diagnostic test was positively significant in model 1 and negatively significant in model 4. The interaction term of baseline prevalence and FTS diagnostic test was significant in three models though the estimate was unstable in the W. bancrofti-only and Anopheles-only models (models 3 and 4 respectively), as signified by large confidence intervals."
     },
     {
       "self_ref": "#/texts/42",
@@ -845,8 +851,8 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "Overall 74 districts in the dataset failed pre-TAS.  Fig 5  summarizes the likelihood of failure by variable combinations identified in the log-binomial model. For those districts with a baseline prevalence \u226510% that used a FTS diagnostic test and have an average elevation below 350 meters (Combination C01), 87% of the 23 districts failed. Of districts with high baseline that used an ICT diagnostic test and have a low average elevation (C02) 45% failed. Overall, combinations with high baseline and low elevation C01, C02, and C04 accounted for 51% of all the failures (38 of 74).",
-      "text": "Overall 74 districts in the dataset failed pre-TAS.  Fig 5  summarizes the likelihood of failure by variable combinations identified in the log-binomial model. For those districts with a baseline prevalence \u226510% that used a FTS diagnostic test and have an average elevation below 350 meters (Combination C01), 87% of the 23 districts failed. Of districts with high baseline that used an ICT diagnostic test and have a low average elevation (C02) 45% failed. Overall, combinations with high baseline and low elevation C01, C02, and C04 accounted for 51% of all the failures (38 of 74)."
+      "orig": "Overall 74 districts in the dataset failed pre-TAS. Fig 5 summarizes the likelihood of failure by variable combinations identified in the log-binomial model. For those districts with a baseline prevalence \u226510% that used a FTS diagnostic test and have an average elevation below 350 meters (Combination C01), 87% of the 23 districts failed. Of districts with high baseline that used an ICT diagnostic test and have a low average elevation (C02) 45% failed. Overall, combinations with high baseline and low elevation C01, C02, and C04 accounted for 51% of all the failures (38 of 74).",
+      "text": "Overall 74 districts in the dataset failed pre-TAS. Fig 5 summarizes the likelihood of failure by variable combinations identified in the log-binomial model. For those districts with a baseline prevalence \u226510% that used a FTS diagnostic test and have an average elevation below 350 meters (Combination C01), 87% of the 23 districts failed. Of districts with high baseline that used an ICT diagnostic test and have a low average elevation (C02) 45% failed. Overall, combinations with high baseline and low elevation C01, C02, and C04 accounted for 51% of all the failures (38 of 74)."
     },
     {
       "self_ref": "#/texts/43",
@@ -896,8 +902,8 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "This paper reports for the first time factors associated with pre-TAS results from a multi-country analysis. Variables significantly associated with failure were higher baseline prevalence and lower elevation. Districts with a baseline prevalence of 10% or more were at 2.52 times higher risk to fail pre-TAS in the final log-binomial model. In the bivariate analysis, baseline prevalence above 5% was also significantly more likely to fail compared to lower baselines, which indicates that the threshold for higher baseline prevalence may be as little as 5%, similar to what was found in Goldberg  et al ., which explored ecological and socioeconomic factors associated with TAS failure [ 7 ].",
-      "text": "This paper reports for the first time factors associated with pre-TAS results from a multi-country analysis. Variables significantly associated with failure were higher baseline prevalence and lower elevation. Districts with a baseline prevalence of 10% or more were at 2.52 times higher risk to fail pre-TAS in the final log-binomial model. In the bivariate analysis, baseline prevalence above 5% was also significantly more likely to fail compared to lower baselines, which indicates that the threshold for higher baseline prevalence may be as little as 5%, similar to what was found in Goldberg  et al ., which explored ecological and socioeconomic factors associated with TAS failure [ 7 ]."
+      "orig": "This paper reports for the first time factors associated with pre-TAS results from a multi-country analysis. Variables significantly associated with failure were higher baseline prevalence and lower elevation. Districts with a baseline prevalence of 10% or more were at 2.52 times higher risk to fail pre-TAS in the final log-binomial model. In the bivariate analysis, baseline prevalence above 5% was also significantly more likely to fail compared to lower baselines, which indicates that the threshold for higher baseline prevalence may be as little as 5%, similar to what was found in Goldberg et al., which explored ecological and socioeconomic factors associated with TAS failure [7].",
+      "text": "This paper reports for the first time factors associated with pre-TAS results from a multi-country analysis. Variables significantly associated with failure were higher baseline prevalence and lower elevation. Districts with a baseline prevalence of 10% or more were at 2.52 times higher risk to fail pre-TAS in the final log-binomial model. In the bivariate analysis, baseline prevalence above 5% was also significantly more likely to fail compared to lower baselines, which indicates that the threshold for higher baseline prevalence may be as little as 5%, similar to what was found in Goldberg et al., which explored ecological and socioeconomic factors associated with TAS failure [7]."
     },
     {
       "self_ref": "#/texts/45",
@@ -907,8 +913,8 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "Though diagnostic test used was selected for the final log-binomial model, neither category (FTS or ICT) were significant after interaction with high baseline. FTS alone is significant in the bivariate analysis compared to ICT or Mf. This result is not surprising given previous research which found that FTS was more sensitive than ICT [ 45 ].",
-      "text": "Though diagnostic test used was selected for the final log-binomial model, neither category (FTS or ICT) were significant after interaction with high baseline. FTS alone is significant in the bivariate analysis compared to ICT or Mf. This result is not surprising given previous research which found that FTS was more sensitive than ICT [ 45 ]."
+      "orig": "Though diagnostic test used was selected for the final log-binomial model, neither category (FTS or ICT) were significant after interaction with high baseline. FTS alone is significant in the bivariate analysis compared to ICT or Mf. This result is not surprising given previous research which found that FTS was more sensitive than ICT [45].",
+      "text": "Though diagnostic test used was selected for the final log-binomial model, neither category (FTS or ICT) were significant after interaction with high baseline. FTS alone is significant in the bivariate analysis compared to ICT or Mf. This result is not surprising given previous research which found that FTS was more sensitive than ICT [45]."
     },
     {
       "self_ref": "#/texts/46",
@@ -918,8 +924,8 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "Elevation was the only environmental domain variable selected for the final log-binomial model during the model selection process, with areas of lower elevation (<350m) found to be at 3.07 times higher risk to fail pre-TAS compared to districts with a higher elevation. Similar results related to elevation were found in previous studies [ 8 , 31 ], including Goldberg  et al . [ 7 ], who used a cutoff of 200 meters. Elevation likely also encompasses some related environmental concepts, such as vector habitat, greenness (EVI), or rainfall, which impact vector chances of survival.",
-      "text": "Elevation was the only environmental domain variable selected for the final log-binomial model during the model selection process, with areas of lower elevation (<350m) found to be at 3.07 times higher risk to fail pre-TAS compared to districts with a higher elevation. Similar results related to elevation were found in previous studies [ 8 , 31 ], including Goldberg  et al . [ 7 ], who used a cutoff of 200 meters. Elevation likely also encompasses some related environmental concepts, such as vector habitat, greenness (EVI), or rainfall, which impact vector chances of survival."
+      "orig": "Elevation was the only environmental domain variable selected for the final log-binomial model during the model selection process, with areas of lower elevation (<350m) found to be at 3.07 times higher risk to fail pre-TAS compared to districts with a higher elevation. Similar results related to elevation were found in previous studies [8,31], including Goldberg et al. [7], who used a cutoff of 200 meters. Elevation likely also encompasses some related environmental concepts, such as vector habitat, greenness (EVI), or rainfall, which impact vector chances of survival.",
+      "text": "Elevation was the only environmental domain variable selected for the final log-binomial model during the model selection process, with areas of lower elevation (<350m) found to be at 3.07 times higher risk to fail pre-TAS compared to districts with a higher elevation. Similar results related to elevation were found in previous studies [8,31], including Goldberg et al. [7], who used a cutoff of 200 meters. Elevation likely also encompasses some related environmental concepts, such as vector habitat, greenness (EVI), or rainfall, which impact vector chances of survival."
     },
     {
       "self_ref": "#/texts/47",
@@ -929,8 +935,8 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "The small number of failures overall prevented the inclusion of a large number of variables in the final log-binomial model. However, other variables that are associated with failure as identified in the bivariate analyses, such as  Culex  vector, higher population density, higher EVI, higher rainfall and more rounds of MDA, should not be discounted when making programmatic decisions. Other models have shown that  Culex  as the predominant vector in a district, compared to  Anopheles , results in more intense interventions needed to reach elimination [ 24 , 41 ]. Higher population density, which was also found to predict TAS failure [ 7 ], could be related to different vector species\u2019 transmission dynamics in urban areas, as well as the fact that MDAs are harder to conduct and to accurately measure in urban areas [ 46 , 47 ]. Both higher enhanced vegetation index (>0.3) and higher rainfall (>700 mm per year) contribute to expansion of vector habitats and population. Additionally, having more than five rounds of MDA before pre-TAS was also statistically significantly associated with higher failure in the bivariate analysis. It is unclear why higher number of rounds is associated with first pre-TAS failure given that other research has shown the opposite [ 15 , 16 ].",
-      "text": "The small number of failures overall prevented the inclusion of a large number of variables in the final log-binomial model. However, other variables that are associated with failure as identified in the bivariate analyses, such as  Culex  vector, higher population density, higher EVI, higher rainfall and more rounds of MDA, should not be discounted when making programmatic decisions. Other models have shown that  Culex  as the predominant vector in a district, compared to  Anopheles , results in more intense interventions needed to reach elimination [ 24 , 41 ]. Higher population density, which was also found to predict TAS failure [ 7 ], could be related to different vector species\u2019 transmission dynamics in urban areas, as well as the fact that MDAs are harder to conduct and to accurately measure in urban areas [ 46 , 47 ]. Both higher enhanced vegetation index (>0.3) and higher rainfall (>700 mm per year) contribute to expansion of vector habitats and population. Additionally, having more than five rounds of MDA before pre-TAS was also statistically significantly associated with higher failure in the bivariate analysis. It is unclear why higher number of rounds is associated with first pre-TAS failure given that other research has shown the opposite [ 15 , 16 ]."
+      "orig": "The small number of failures overall prevented the inclusion of a large number of variables in the final log-binomial model. However, other variables that are associated with failure as identified in the bivariate analyses, such as Culex vector, higher population density, higher EVI, higher rainfall and more rounds of MDA, should not be discounted when making programmatic decisions. Other models have shown that Culex as the predominant vector in a district, compared to Anopheles, results in more intense interventions needed to reach elimination [24,41]. Higher population density, which was also found to predict TAS failure [7], could be related to different vector species\u2019 transmission dynamics in urban areas, as well as the fact that MDAs are harder to conduct and to accurately measure in urban areas [46,47]. Both higher enhanced vegetation index (>0.3) and higher rainfall (>700 mm per year) contribute to expansion of vector habitats and population. Additionally, having more than five rounds of MDA before pre-TAS was also statistically significantly associated with higher failure in the bivariate analysis. It is unclear why higher number of rounds is associated with first pre-TAS failure given that other research has shown the opposite [15,16].",
+      "text": "The small number of failures overall prevented the inclusion of a large number of variables in the final log-binomial model. However, other variables that are associated with failure as identified in the bivariate analyses, such as Culex vector, higher population density, higher EVI, higher rainfall and more rounds of MDA, should not be discounted when making programmatic decisions. Other models have shown that Culex as the predominant vector in a district, compared to Anopheles, results in more intense interventions needed to reach elimination [24,41]. Higher population density, which was also found to predict TAS failure [7], could be related to different vector species\u2019 transmission dynamics in urban areas, as well as the fact that MDAs are harder to conduct and to accurately measure in urban areas [46,47]. Both higher enhanced vegetation index (>0.3) and higher rainfall (>700 mm per year) contribute to expansion of vector habitats and population. Additionally, having more than five rounds of MDA before pre-TAS was also statistically significantly associated with higher failure in the bivariate analysis. It is unclear why higher number of rounds is associated with first pre-TAS failure given that other research has shown the opposite [15,16]."
     },
     {
       "self_ref": "#/texts/48",
@@ -940,8 +946,8 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "All other variables included in this analysis were not significantly associated with pre-TAS failure in our analysis. Goldberg  et al . found  Brugia  spp. to be significantly associated with failure, but our results did not. This is likely due in part to the small number of districts with  Brugia  spp. in our dataset (6%) compared to 46% in the Goldberg  et al . article [ 7 ]. MDA coverage levels were not significantly associated with pre-TAS failure, likely due to the lack of variance in the coverage data since WHO guidance dictates a minimum of five rounds of MDA with \u226565% epidemiological coverage to be eligible to implement pre-TAS. It should not be interpreted as evidence that high MDA coverage levels are not necessary to lower prevalence.",
-      "text": "All other variables included in this analysis were not significantly associated with pre-TAS failure in our analysis. Goldberg  et al . found  Brugia  spp. to be significantly associated with failure, but our results did not. This is likely due in part to the small number of districts with  Brugia  spp. in our dataset (6%) compared to 46% in the Goldberg  et al . article [ 7 ]. MDA coverage levels were not significantly associated with pre-TAS failure, likely due to the lack of variance in the coverage data since WHO guidance dictates a minimum of five rounds of MDA with \u226565% epidemiological coverage to be eligible to implement pre-TAS. It should not be interpreted as evidence that high MDA coverage levels are not necessary to lower prevalence."
+      "orig": "All other variables included in this analysis were not significantly associated with pre-TAS failure in our analysis. Goldberg et al. found Brugia spp. to be significantly associated with failure, but our results did not. This is likely due in part to the small number of districts with Brugia spp. in our dataset (6%) compared to 46% in the Goldberg et al. article [7]. MDA coverage levels were not significantly associated with pre-TAS failure, likely due to the lack of variance in the coverage data since WHO guidance dictates a minimum of five rounds of MDA with \u226565% epidemiological coverage to be eligible to implement pre-TAS. It should not be interpreted as evidence that high MDA coverage levels are not necessary to lower prevalence.",
+      "text": "All other variables included in this analysis were not significantly associated with pre-TAS failure in our analysis. Goldberg et al. found Brugia spp. to be significantly associated with failure, but our results did not. This is likely due in part to the small number of districts with Brugia spp. in our dataset (6%) compared to 46% in the Goldberg et al. article [7]. MDA coverage levels were not significantly associated with pre-TAS failure, likely due to the lack of variance in the coverage data since WHO guidance dictates a minimum of five rounds of MDA with \u226565% epidemiological coverage to be eligible to implement pre-TAS. It should not be interpreted as evidence that high MDA coverage levels are not necessary to lower prevalence."
     },
     {
       "self_ref": "#/texts/49",
@@ -951,8 +957,8 @@
       "children": [],
       "label": "text",
       "prov": [],
-      "orig": "Limitations to this study include data sources, excluded data, unreported data, misassigned data, and aggregation of results at the district level. The main data sources for this analysis were programmatic data, which may be less accurate than data collected specifically for research purposes. This is particularly true of the MDA coverage data, where some countries report data quality challenges in areas of instability or frequent population migration. Even though risk factors such as age, sex, compliance with MDA, and use of bednets have been shown to influence infection in individuals [ 40 , 48 \u2013 50 ], we could not include factors from the human host domain in our analysis, as data sets were aggregated at site level and did not include individual information. In addition, vector control data were not universally available across the 13 countries and thus were not included in the analysis, despite studies showing that vector control has an impact on reducing LF prevalence [ 41 , 48 , 51 \u2013 53 ].",
-      "text": "Limitations to this study include data sources, excluded data, unreported data, misassigned data, and aggregation of results at the district level. The main data sources for this analysis were programmatic data, which may be less accurate than data collected specifically for research purposes. This is particularly true of the MDA coverage data, where some countries report data quality challenges in areas of instability or frequent population migration. Even though risk factors such as age, sex, compliance with MDA, and use of bednets have been shown to influence infection in individuals [ 40 , 48 \u2013 50 ], we could not include factors from the human host domain in our analysis, as data sets were aggregated at site level and did not include individual information. In addition, vector control data were not universally available across the 13 countries and thus were not included in the analysis, despite studies showing that vector control has an impact on reducing LF prevalence [ 41 , 48 , 51 \u2013 53 ]."
+      "orig": "Limitations to this study include data sources, excluded data, unreported data, misassigned data, and aggregation of results at the district level. The main data sources for this analysis were programmatic data, which may be less accurate than data collected specifically for research purposes. This is particularly true of the MDA coverage data, where some countries report data quality challenges in areas of instability or frequent population migration. Even though risk factors such as age, sex, compliance with MDA, and use of bednets have been shown to influence infection in individuals [40,48\u201350], we could not include factors from the human host domain in our analysis, as data sets were aggregated at site level and did not include individual information. In addition, vector control data were not universally available across the 13 countries and thus were not included in the analysis, despite studies showing that vector control has an impact on reducing LF prevalence [41,48,51\u201353].",
+      "text": "Limitations to this study include data sources, excluded data, unreported data, misassigned data, and aggregation of results at the district level. The main data sources for this analysis were programmatic data, which may be less accurate than data collected specifically for research purposes. This is particularly true of the MDA coverage data, where some countries report data quality challenges in areas of instability or frequent population migration. Even though risk factors such as age, sex, compliance with MDA, and use of bednets have been shown to influence infection in individuals [40,48\u201350], we could not include factors from the human host domain in our analysis, as data sets were aggregated at site level and did not include individual information. In addition, vector control data were not universally available across the 13 countries and thus were not included in the analysis, despite studies showing that vector control has an impact on reducing LF prevalence [41,48,51\u201353]."
     },
     {
       "self_ref": "#/texts/50",
@@ -1014,8 +1020,8 @@
       "children": [],
       "label": "caption",
       "prov": [],
-      "orig": "Table 1 Categorization of potential factors influencing pre-TAS results.",
-      "text": "Table 1 Categorization of potential factors influencing pre-TAS results."
+      "orig": "Table 1: Categorization of potential factors influencing pre-TAS results.",
+      "text": "Table 1: Categorization of potential factors influencing pre-TAS results."
     },
     {
       "self_ref": "#/texts/55",
@@ -1025,15 +1031,31 @@
       "children": [],
       "label": "caption",
       "prov": [],
-      "orig": "Table 2 Adjusted risk ratios for pre-TAS failure from log-binomial model sensitivity analysis.",
-      "text": "Table 2 Adjusted risk ratios for pre-TAS failure from log-binomial model sensitivity analysis."
+      "orig": "Table 2: Adjusted risk ratios for pre-TAS failure from log-binomial model sensitivity analysis.",
+      "text": "Table 2: Adjusted risk ratios for pre-TAS failure from log-binomial model sensitivity analysis."
     },
     {
       "self_ref": "#/texts/56",
       "parent": {
         "$ref": "#/texts/0"
       },
-      "children": [],
+      "children": [
+        {
+          "$ref": "#/pictures/0"
+        },
+        {
+          "$ref": "#/pictures/1"
+        },
+        {
+          "$ref": "#/pictures/2"
+        },
+        {
+          "$ref": "#/pictures/3"
+        },
+        {
+          "$ref": "#/pictures/4"
+        }
+      ],
       "label": "section_header",
       "prov": [],
       "orig": "Figures",
@@ -1048,8 +1070,8 @@
       "children": [],
       "label": "caption",
       "prov": [],
-      "orig": "Fig 1 Number of pre-TAS by country.",
-      "text": "Fig 1 Number of pre-TAS by country."
+      "orig": "Fig 1: Number of pre-TAS by country.\n",
+      "text": "Fig 1: Number of pre-TAS by country.\n"
     },
     {
       "self_ref": "#/texts/58",
@@ -1059,8 +1081,8 @@
       "children": [],
       "label": "caption",
       "prov": [],
-      "orig": "Fig 2 District-level baseline prevalence by country.",
-      "text": "Fig 2 District-level baseline prevalence by country."
+      "orig": "Fig 2: District-level baseline prevalence by country.\n",
+      "text": "Fig 2: District-level baseline prevalence by country.\n"
     },
     {
       "self_ref": "#/texts/59",
@@ -1070,8 +1092,8 @@
       "children": [],
       "label": "caption",
       "prov": [],
-      "orig": "Fig 3 Percent pre-TAS failure by each characteristic (unadjusted).",
-      "text": "Fig 3 Percent pre-TAS failure by each characteristic (unadjusted)."
+      "orig": "Fig 3: Percent pre-TAS failure by each characteristic (unadjusted).\n",
+      "text": "Fig 3: Percent pre-TAS failure by each characteristic (unadjusted).\n"
     },
     {
       "self_ref": "#/texts/60",
@@ -1081,8 +1103,8 @@
       "children": [],
       "label": "caption",
       "prov": [],
-      "orig": "Fig 4 Adjusted risk ratios for pre-TAS failure with 95% Confidence Interval from log-binomial model.",
-      "text": "Fig 4 Adjusted risk ratios for pre-TAS failure with 95% Confidence Interval from log-binomial model."
+      "orig": "Fig 4: Adjusted risk ratios for pre-TAS failure with 95% Confidence Interval from log-binomial model.\n",
+      "text": "Fig 4: Adjusted risk ratios for pre-TAS failure with 95% Confidence Interval from log-binomial model.\n"
     },
     {
       "self_ref": "#/texts/61",
@@ -1092,8 +1114,8 @@
       "children": [],
       "label": "caption",
       "prov": [],
-      "orig": "Fig 5 Analysis of failures by model combinations.",
-      "text": "Fig 5 Analysis of failures by model combinations."
+      "orig": "Fig 5: Analysis of failures by model combinations.\n",
+      "text": "Fig 5: Analysis of failures by model combinations.\n"
     },
     {
       "self_ref": "#/texts/62",
@@ -1119,13 +1141,65 @@
       "children": [],
       "label": "list_item",
       "prov": [],
+      "orig": "World Health Organization. Lymphatic filariasis: progress report 2000\u20132009 and strategic plan 2010\u20132020. Geneva; 2010. ",
+      "text": "World Health Organization. Lymphatic filariasis: progress report 2000\u20132009 and strategic plan 2010\u20132020. Geneva; 2010. ",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "label": "list_item",
+      "prov": [],
+      "orig": "World Health Organization. Validation of elimination of lymphatic filariasis as a public health problem. Geneva; 2017. ",
+      "text": "World Health Organization. Validation of elimination of lymphatic filariasis as a public health problem. Geneva; 2017. ",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "label": "list_item",
+      "prov": [],
       "orig": "Global programme to eliminate lymphatic filariasis: progress report, 2018. Wkly Epidemiol Rec (2019)",
       "text": "Global programme to eliminate lymphatic filariasis: progress report, 2018. Wkly Epidemiol Rec (2019)",
       "enumerated": false,
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/64",
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "label": "list_item",
+      "prov": [],
+      "orig": "World Health Organization. Global programme to eliminate lymphatic filariasis: monitoring and epidemiological assessment of mass drug administration. Geneva; 2011. ",
+      "text": "World Health Organization. Global programme to eliminate lymphatic filariasis: monitoring and epidemiological assessment of mass drug administration. Geneva; 2011. ",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "label": "list_item",
+      "prov": [],
+      "orig": "World Health Organization. Strengthening the assessment of lymphatic filariasis transmission and documenting the achievement of elimination\u2014Meeting of the Neglected Tropical Diseases Strategic and Technical Advisory Group\u2019s Monitoring and Evaluation Subgroup on Disease-specific Indicators. 2016; 42. ",
+      "text": "World Health Organization. Strengthening the assessment of lymphatic filariasis transmission and documenting the achievement of elimination\u2014Meeting of the Neglected Tropical Diseases Strategic and Technical Advisory Group\u2019s Monitoring and Evaluation Subgroup on Disease-specific Indicators. 2016; 42. ",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/68",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1138,7 +1212,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/65",
+      "self_ref": "#/texts/69",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1151,7 +1225,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/66",
+      "self_ref": "#/texts/70",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1164,7 +1238,33 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/67",
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "label": "list_item",
+      "prov": [],
+      "orig": "CGIAR-CSI. CGIAR-CSI SRTM 90m DEM Digital Elevation Database. In: . ",
+      "text": "CGIAR-CSI. CGIAR-CSI SRTM 90m DEM Digital Elevation Database. In: . ",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/72",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "label": "list_item",
+      "prov": [],
+      "orig": "USGS NASA. Vegetation indices 16-DAy L3 global 500 MOD13A1 dataset [Internet]. [cited 1 May 2018]. Available: . ",
+      "text": "USGS NASA. Vegetation indices 16-DAy L3 global 500 MOD13A1 dataset [Internet]. [cited 1 May 2018]. Available: . ",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/73",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1177,7 +1277,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/68",
+      "self_ref": "#/texts/74",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1190,7 +1290,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/69",
+      "self_ref": "#/texts/75",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1203,7 +1303,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/70",
+      "self_ref": "#/texts/76",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1216,7 +1316,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/71",
+      "self_ref": "#/texts/77",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1229,7 +1329,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/72",
+      "self_ref": "#/texts/78",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1242,7 +1342,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/73",
+      "self_ref": "#/texts/79",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1255,7 +1355,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/74",
+      "self_ref": "#/texts/80",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1268,7 +1368,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/75",
+      "self_ref": "#/texts/81",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1281,7 +1381,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/76",
+      "self_ref": "#/texts/82",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1294,7 +1394,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/77",
+      "self_ref": "#/texts/83",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1307,7 +1407,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/78",
+      "self_ref": "#/texts/84",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1320,7 +1420,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/79",
+      "self_ref": "#/texts/85",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1333,7 +1433,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/80",
+      "self_ref": "#/texts/86",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1346,7 +1446,20 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/81",
+      "self_ref": "#/texts/87",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "label": "list_item",
+      "prov": [],
+      "orig": "World Health Organization. Global programme to eliminate lymphatic filariasis: practical entomology handbook. Geneva; 2013. ",
+      "text": "World Health Organization. Global programme to eliminate lymphatic filariasis: practical entomology handbook. Geneva; 2013. ",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/88",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1359,7 +1472,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/82",
+      "self_ref": "#/texts/89",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1372,7 +1485,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/83",
+      "self_ref": "#/texts/90",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1385,7 +1498,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/84",
+      "self_ref": "#/texts/91",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1398,7 +1511,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/85",
+      "self_ref": "#/texts/92",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1411,7 +1524,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/86",
+      "self_ref": "#/texts/93",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1424,7 +1537,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/87",
+      "self_ref": "#/texts/94",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1437,7 +1550,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/88",
+      "self_ref": "#/texts/95",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1450,7 +1563,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/89",
+      "self_ref": "#/texts/96",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1463,7 +1576,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/90",
+      "self_ref": "#/texts/97",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1476,7 +1589,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/91",
+      "self_ref": "#/texts/98",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1489,7 +1602,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/92",
+      "self_ref": "#/texts/99",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1502,7 +1615,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/93",
+      "self_ref": "#/texts/100",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1515,7 +1628,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/94",
+      "self_ref": "#/texts/101",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1528,7 +1641,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/95",
+      "self_ref": "#/texts/102",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1541,7 +1654,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/96",
+      "self_ref": "#/texts/103",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1554,7 +1667,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/97",
+      "self_ref": "#/texts/104",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1567,7 +1680,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/98",
+      "self_ref": "#/texts/105",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1580,7 +1693,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/99",
+      "self_ref": "#/texts/106",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1593,7 +1706,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/100",
+      "self_ref": "#/texts/107",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1606,7 +1719,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/101",
+      "self_ref": "#/texts/108",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1619,7 +1732,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/102",
+      "self_ref": "#/texts/109",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1632,7 +1745,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/103",
+      "self_ref": "#/texts/110",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1645,7 +1758,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/104",
+      "self_ref": "#/texts/111",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1658,7 +1771,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/105",
+      "self_ref": "#/texts/112",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1671,7 +1784,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/106",
+      "self_ref": "#/texts/113",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1684,7 +1797,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/107",
+      "self_ref": "#/texts/114",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1697,7 +1810,7 @@
       "marker": "-"
     },
     {
-      "self_ref": "#/texts/108",
+      "self_ref": "#/texts/115",
       "parent": {
         "$ref": "#/groups/0"
       },
@@ -1714,7 +1827,7 @@
     {
       "self_ref": "#/pictures/0",
       "parent": {
-        "$ref": "#/texts/0"
+        "$ref": "#/texts/56"
       },
       "children": [],
       "label": "picture",
@@ -1731,7 +1844,7 @@
     {
       "self_ref": "#/pictures/1",
       "parent": {
-        "$ref": "#/texts/0"
+        "$ref": "#/texts/56"
       },
       "children": [],
       "label": "picture",
@@ -1748,7 +1861,7 @@
     {
       "self_ref": "#/pictures/2",
       "parent": {
-        "$ref": "#/texts/0"
+        "$ref": "#/texts/56"
       },
       "children": [],
       "label": "picture",
@@ -1765,7 +1878,7 @@
     {
       "self_ref": "#/pictures/3",
       "parent": {
-        "$ref": "#/texts/0"
+        "$ref": "#/texts/56"
       },
       "children": [],
       "label": "picture",
@@ -1782,7 +1895,7 @@
     {
       "self_ref": "#/pictures/4",
       "parent": {
-        "$ref": "#/texts/0"
+        "$ref": "#/texts/56"
       },
       "children": [],
       "label": "picture",
