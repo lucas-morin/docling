@@ -1,16 +1,17 @@
-Docling’s document conversion can be executed as distributed jobs using [docling-jobkit](https://github.com/docling-project/docling-jobkit).
+Docling's document conversion can be executed as distributed jobs using [Docling Jobkit](https://github.com/docling-project/docling-jobkit).
 
 This library provides:
 
-- Pipelines for running jobs with Ray, with Kubeflow or locally.
+- Pipelines for running jobs with Kueflow pipelines, Ray, or locally.
 - Connectors to import and export documents via HTTP endpoints, S3, or Google Drive.
 
 ## Usage
 
 ### CLI
 
-You can run `docling-jobkit` locally via the CLI:
-```
+You can run Jobkit locally via the CLI:
+
+```sh
 uv run docling-jobkit-local [configuration-file-path]
 ```
 
@@ -21,8 +22,9 @@ The configuration file defines:
 - Target location for the converted outputs
 
 Example configuration file:
+
 ```yaml
-options:               # Docling's conversion options
+options:               # Example Docling's conversion options
   do_ocr: false         
 sources:               # Source location (here Google Drive)
   - kind: google_drive
